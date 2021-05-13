@@ -1,0 +1,8 @@
+{
+    "vector:geo": ["geojson", "shp", "geopackage", "csv"],
+    "vector": ["svg"],
+    "raster:geo": ["geotiff"],
+    "raster": ["tiff", "png", "jpg", "jpeg", "jpeg2000"],
+    "table": ["xls", "xlsx", "csv", "ods"],
+    "other": ["*"]
+}

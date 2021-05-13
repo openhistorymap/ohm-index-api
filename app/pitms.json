@@ -1,0 +1,948 @@
+{
+  "86D9SAJ3": {
+    "key": "86D9SAJ3",
+    "version": 191,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/86D9SAJ3",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/86D9SAJ3",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      },
+      "creatorSummary": "Ancient World Mapping Center",
+      "parsedDate": "2012",
+      "numChildren": 2
+    },
+    "data": {
+      "key": "86D9SAJ3",
+      "version": 191,
+      "itemType": "document",
+      "title": "Roman Aqueducts",
+      "creators": [
+        {
+          "creatorType": "author",
+          "name": "Ancient World Mapping Center"
+        }
+      ],
+      "abstractNote": "",
+      "publisher": "",
+      "date": "2012",
+      "language": "",
+      "shortTitle": "",
+      "url": "http://awmc.unc.edu/wordpress/map-files/",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": "",
+      "tags": {
+        "ohm:area": "geonames:6295630",
+        "ohm:dataset:all:format": "shapefile",
+        "ohm:dataset:all:type": "vector:geo",
+        "ohm:from_time": "-700",
+        "ohm:source_quality": "4",
+        "ohm:source_reliability": "6",
+        "ohm:to_time": "100",
+        "ohm:topic:topic": "location",
+        "ohm:topic": "infrastructure:water"
+      },
+      "collections": [],
+      "relations": {},
+      "dateAdded": "2021-05-12T13:46:55Z",
+      "dateModified": "2021-05-12T13:53:29Z"
+    },
+    "datasets": 2
+  },
+  "BR7T4S68": {
+    "key": "BR7T4S68",
+    "version": 169,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/BR7T4S68",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/BR7T4S68",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      },
+      "numChildren": 1
+    },
+    "data": {
+      "key": "BR7T4S68",
+      "version": 169,
+      "itemType": "document",
+      "title": "CLIWOC",
+      "creators": [],
+      "abstractNote": "",
+      "publisher": "",
+      "date": "",
+      "language": "",
+      "shortTitle": "",
+      "url": "https://webs.ucm.es/info/cliwoc/",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": "",
+      "tags": {
+        "ohm:area": "geonames:6295630",
+        "ohm:dataset:all:format": "csv",
+        "ohm:dataset:all:type": "vector:geo",
+        "ohm:from_time": "1750",
+        "ohm:source_quality": "6",
+        "ohm:source_reliability": "5",
+        "ohm:to_time": "1855",
+        "ohm:topic:topic": "location",
+        "ohm:topic": "climate"
+      },
+      "collections": [],
+      "relations": {},
+      "dateAdded": "2021-05-12T12:26:50Z",
+      "dateModified": "2021-05-12T12:26:50Z"
+    },
+    "datasets": 1
+  },
+  "442QJAZ8": {
+    "key": "442QJAZ8",
+    "version": 158,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/442QJAZ8",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/442QJAZ8",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      },
+      "creatorSummary": "McCormick",
+      "parsedDate": "2013",
+      "numChildren": 1
+    },
+    "data": {
+      "key": "442QJAZ8",
+      "version": 158,
+      "itemType": "conferencePaper",
+      "title": "Roman Road Network",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "M",
+          "lastName": "McCormick"
+        }
+      ],
+      "abstractNote": "",
+      "date": "2013",
+      "proceedingsTitle": "DARMC Scholarly Data Series 2013-5",
+      "conferenceName": "",
+      "place": "",
+      "publisher": "",
+      "volume": "",
+      "pages": "",
+      "series": "",
+      "language": "",
+      "DOI": "",
+      "ISBN": "",
+      "shortTitle": "",
+      "url": "https://docs.google.com/file/d/0B4KitLDpLpYfN3hKM3E2YWltWm8/edit?usp=sharing",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": "",
+      "tags": {
+        "ohm:dataset:all:format": "shapefile",
+        "ohm:dataset:all:type": "vector:geo",
+        "ohm:from_time": "-700",
+        "ohm:to_time": "500",
+        "ohm:topic:topic": "location",
+        "ohm:topic": "infrastructure:roads"
+      },
+      "collections": [],
+      "relations": {},
+      "dateAdded": "2021-05-12T12:14:43Z",
+      "dateModified": "2021-05-12T12:16:42Z"
+    },
+    "datasets": 1
+  },
+  "BBA3T7KC": {
+    "key": "BBA3T7KC",
+    "version": 161,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/BBA3T7KC",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/BBA3T7KC",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      },
+      "creatorSummary": "Defense Digital Service",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "BBA3T7KC",
+      "version": 161,
+      "itemType": "document",
+      "title": "THOR Project-Korea",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "",
+          "lastName": "Defense Digital Service"
+        }
+      ],
+      "abstractNote": "",
+      "publisher": "",
+      "date": "",
+      "language": "",
+      "shortTitle": "",
+      "url": "https://data.world/datamil/world-war-ii-thor-data",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": "",
+      "tags": {
+        "ohm:dataset:all:format": "csv",
+        "ohm:dataset:all:type": "other",
+        "ohm:from_time": "1950",
+        "ohm:to_time": "1973",
+        "ohm:topic:topic": "events",
+        "ohm:topic": "war"
+      },
+      "collections": [],
+      "relations": {},
+      "dateAdded": "2021-05-12T12:04:39Z",
+      "dateModified": "2021-05-12T12:04:43Z"
+    },
+    "datasets": 0
+  },
+  "A3TLVMJ4": {
+    "key": "A3TLVMJ4",
+    "version": 162,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/A3TLVMJ4",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/A3TLVMJ4",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      },
+      "creatorSummary": "Defense Digital Service",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "A3TLVMJ4",
+      "version": 162,
+      "itemType": "document",
+      "title": "THOR Project-Vietnam",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "",
+          "lastName": "Defense Digital Service"
+        }
+      ],
+      "abstractNote": "",
+      "publisher": "",
+      "date": "",
+      "language": "",
+      "shortTitle": "",
+      "url": "https://data.world/datamil/world-war-ii-thor-data",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": "",
+      "tags": {
+        "ohm:dataset:all:format": "csv",
+        "ohm:dataset:all:type": "other",
+        "ohm:from_time": "1955",
+        "ohm:to_time": "1973",
+        "ohm:topic:topic": "events",
+        "ohm:topic": "war"
+      },
+      "collections": [],
+      "relations": {},
+      "dateAdded": "2021-05-12T12:04:27Z",
+      "dateModified": "2021-05-12T12:04:34Z"
+    },
+    "datasets": 0
+  },
+  "H6F8Z7Q4": {
+    "key": "H6F8Z7Q4",
+    "version": 160,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/H6F8Z7Q4",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/H6F8Z7Q4",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      },
+      "creatorSummary": "Defense Digital Service",
+      "numChildren": 0
+    },
+    "data": {
+      "key": "H6F8Z7Q4",
+      "version": 160,
+      "itemType": "document",
+      "title": "THOR Project-WW1",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "",
+          "lastName": "Defense Digital Service"
+        }
+      ],
+      "abstractNote": "",
+      "publisher": "",
+      "date": "",
+      "language": "",
+      "shortTitle": "",
+      "url": "https://data.world/datamil/world-war-ii-thor-data",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": "",
+      "tags": {
+        "ohm:dataset:all:format": "csv",
+        "ohm:dataset:all:type": "other",
+        "ohm:from_time": "1914",
+        "ohm:to_time": "1918",
+        "ohm:topic:topic": "events",
+        "ohm:topic": "war"
+      },
+      "collections": [],
+      "relations": {},
+      "dateAdded": "2021-05-12T12:04:08Z",
+      "dateModified": "2021-05-12T12:04:22Z"
+    },
+    "datasets": 0
+  },
+  "E82B3S7A": {
+    "key": "E82B3S7A",
+    "version": 163,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/E82B3S7A",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/E82B3S7A",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      },
+      "creatorSummary": "Defense Digital Service",
+      "numChildren": 3
+    },
+    "data": {
+      "key": "E82B3S7A",
+      "version": 163,
+      "itemType": "document",
+      "title": "THOR Project-WW2",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "",
+          "lastName": "Defense Digital Service"
+        }
+      ],
+      "abstractNote": "",
+      "publisher": "",
+      "date": "",
+      "language": "",
+      "shortTitle": "",
+      "url": "https://data.world/datamil/world-war-ii-thor-data",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": "",
+      "tags": {
+        "ohm:area": "geonames:6295630",
+        "ohm:dataset:all:format": "csv",
+        "ohm:dataset:all:type": "other",
+        "ohm:from_time": "1943",
+        "ohm:source_quality": "4",
+        "ohm:source_reliability": "6",
+        "ohm:to_time": "1945",
+        "ohm:topic:topic": "events",
+        "ohm:topic": "war"
+      },
+      "collections": [],
+      "relations": {},
+      "dateAdded": "2021-05-12T11:54:50Z",
+      "dateModified": "2021-05-12T11:57:10Z"
+    },
+    "datasets": 3
+  },
+  "F6655FZP": {
+    "key": "F6655FZP",
+    "version": 96,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/F6655FZP",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/F6655FZP",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      },
+      "creatorSummary": "Lucia Marsicano",
+      "numChildren": 5
+    },
+    "data": {
+      "key": "F6655FZP",
+      "version": 96,
+      "itemType": "document",
+      "title": "Entertainment in the Roman Age",
+      "creators": [
+        {
+          "creatorType": "author",
+          "firstName": "",
+          "lastName": "Lucia Marsicano"
+        }
+      ],
+      "abstractNote": "",
+      "publisher": "",
+      "date": "",
+      "language": "",
+      "shortTitle": "",
+      "url": "https://archeolucia.geocontext.info/#/map",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": "",
+      "tags": {
+        "ohm:area": "geonames:8354456",
+        "ohm:dataset:all:format": "geojson",
+        "ohm:dataset:all:type": "vector:geo",
+        "ohm:from_time": "-390",
+        "ohm:source_quality": "6",
+        "ohm:source_reliability": "5",
+        "ohm:to_time": "100",
+        "ohm:topic:topic": "location",
+        "ohm:topic": "entertainment"
+      },
+      "collections": [],
+      "relations": {},
+      "dateAdded": "2021-05-07T11:10:50Z",
+      "dateModified": "2021-05-11T17:59:03Z"
+    },
+    "datasets": 4
+  },
+  "IQBW3YU6": {
+    "key": "IQBW3YU6",
+    "version": 98,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/IQBW3YU6",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/IQBW3YU6",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      },
+      "numChildren": 2
+    },
+    "data": {
+      "key": "IQBW3YU6",
+      "version": 98,
+      "itemType": "document",
+      "title": "ThinkQuest archive",
+      "creators": [],
+      "abstractNote": "",
+      "publisher": "",
+      "date": "",
+      "language": "",
+      "shortTitle": "",
+      "url": "http://web.archive.org/web/20080328104539/http://library.thinkquest.org:80/C006628/download.html",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": "",
+      "tags": {
+        "ohm:area": "geonames:6295630",
+        "ohm:dataset:all:format": "shapefile",
+        "ohm:dataset:all:type": "vector:geo",
+        "ohm:from_time": "-8000",
+        "ohm:source_quality": "3",
+        "ohm:source_reliability": "3",
+        "ohm:to_time": "2000",
+        "ohm:topic:topic": "location",
+        "ohm:topic": "politics"
+      },
+      "collections": [],
+      "relations": {},
+      "dateAdded": "2021-05-10T19:29:02Z",
+      "dateModified": "2021-05-11T17:58:55Z"
+    },
+    "datasets": 2
+  },
+  "SMDD7SIT": {
+    "key": "SMDD7SIT",
+    "version": 102,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/SMDD7SIT",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/SMDD7SIT",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      },
+      "numChildren": 1
+    },
+    "data": {
+      "key": "SMDD7SIT",
+      "version": 102,
+      "itemType": "document",
+      "title": "M\u00e9nestrel M\u00e9di\u00e9vistes sur le net : sources, travaux et r\u00e9f\u00e9rences en ligne",
+      "creators": [],
+      "abstractNote": "",
+      "publisher": "",
+      "date": "",
+      "language": "",
+      "shortTitle": "",
+      "url": "http://www.menestrel.fr/",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": "",
+      "tags": {
+        "ohm:area": "geonames:8354456",
+        "ohm:dataset:all:format": "shapefile",
+        "ohm:dataset:all:type": "vector:geo",
+        "ohm:from_time": "450",
+        "ohm:source_quality": "6",
+        "ohm:source_reliability": "6",
+        "ohm:to_time": "900",
+        "ohm:topic:topic": "location",
+        "ohm:topic": "politics"
+      },
+      "collections": [],
+      "relations": {},
+      "dateAdded": "2021-05-10T21:34:26Z",
+      "dateModified": "2021-05-11T17:58:48Z"
+    },
+    "datasets": 1
+  },
+  "N2L7TA7Y": {
+    "key": "N2L7TA7Y",
+    "version": 100,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/N2L7TA7Y",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/N2L7TA7Y",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      },
+      "numChildren": 2
+    },
+    "data": {
+      "key": "N2L7TA7Y",
+      "version": 100,
+      "itemType": "document",
+      "title": "M\u00e9nestrel M\u00e9di\u00e9vistes sur le net : sources, travaux et r\u00e9f\u00e9rences en ligne",
+      "creators": [],
+      "abstractNote": "",
+      "publisher": "",
+      "date": "",
+      "language": "",
+      "shortTitle": "",
+      "url": "http://www.menestrel.fr/",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": "",
+      "tags": {
+        "ohm:area": "geonames:8354456",
+        "ohm:dataset:all:format": "shapefile",
+        "ohm:dataset:all:type": "vector:geo",
+        "ohm:from_time": "500",
+        "ohm:source_quality": "6",
+        "ohm:source_reliability": "6",
+        "ohm:to_time": "1600",
+        "ohm:topic:topic": "location",
+        "ohm:topic": "religion"
+      },
+      "collections": [],
+      "relations": {},
+      "dateAdded": "2021-05-10T21:19:57Z",
+      "dateModified": "2021-05-11T17:58:41Z"
+    },
+    "datasets": 2
+  },
+  "JDW29APT": {
+    "key": "JDW29APT",
+    "version": 165,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/JDW29APT",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/JDW29APT",
+        "type": "text/html"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      },
+      "numChildren": 1
+    },
+    "data": {
+      "key": "JDW29APT",
+      "version": 165,
+      "itemType": "document",
+      "title": "CLIWOC",
+      "creators": [],
+      "abstractNote": "",
+      "publisher": "",
+      "date": "",
+      "language": "",
+      "shortTitle": "",
+      "url": "https://webs.ucm.es/info/cliwoc/",
+      "accessDate": "",
+      "archive": "",
+      "archiveLocation": "",
+      "libraryCatalog": "",
+      "callNumber": "",
+      "rights": "",
+      "extra": "",
+      "tags": {
+        "ohm:area": "geonames:6295630",
+        "ohm:dataset:all:format": "csv",
+        "ohm:dataset:all:type": "vector:geo",
+        "ohm:from_time": "1750",
+        "ohm:source_quality": "6",
+        "ohm:source_reliability": "5",
+        "ohm:to_time": "1855",
+        "ohm:topic:topic": "location",
+        "ohm:topic": "ephemeral"
+      },
+      "collections": [],
+      "relations": {},
+      "dateAdded": "2021-05-10T22:03:27Z",
+      "dateModified": "2021-05-11T17:58:25Z"
+    },
+    "datasets": 1
+  }
+}

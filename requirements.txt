@@ -1,0 +1,7 @@
+Flask==1.1.2
+Flask-Cors==3.0.10
+numpy==1.19.5
+pandas==1.1.5
+pyarrow==4.0.0
+Pyzotero==1.4.21
+requests==2.25.1

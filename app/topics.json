@@ -1,0 +1,16 @@
+{
+    "entertainment": {"location":{}, "structure":{}, "model":{}, "events":{}, "usage":{}, "general":{}, "indexes":{}},
+    "economy": {"location":{}, "structure":{}, "model":{}, "events":{}, "usage":{}, "general":{}, "indexes":{}},
+    "infrastructure:roads": {"location":{}, "structure":{}, "model":{}, "events":{}, "usage":{}, "general":{}, "indexes":{}},
+    "infrastructure:water": {"location":{}, "structure":{}, "model":{}, "events":{}, "usage":{}, "general":{}, "indexes":{}},
+    "infrastructure:air": {"location":{}, "structure":{}, "model":{}, "events":{}, "usage":{}, "general":{}, "indexes":{}},
+    "industry": {"location":{}, "structure":{}, "model":{}, "events":{}, "usage":{}, "general":{}, "indexes":{}},
+    "agriculture": {"location":{}, "structure":{}, "model":{}, "events":{}, "usage":{}, "general":{}, "indexes":{}},
+    "politics": {"location":{}, "structure":{}, "model":{}, "events":{}, "usage":{}, "general":{}, "indexes":{}},
+    "religion": {"location":{}, "structure":{}, "model":{}, "events":{}, "usage":{}, "general":{}, "indexes":{}},
+    "ephemeral": {"location":{}, "structure":{}, "model":{}, "events":{}, "usage":{}, "general":{}, "indexes":{}},
+    "urban": {"location":{}, "structure":{}, "model":{}, "events":{}, "usage":{}, "general":{}, "indexes":{}},
+    "war": {"location":{}, "structure":{}, "model":{}, "events":{}, "usage":{}, "general":{}, "indexes":{}},
+    "climate": {"location":{}, "structure":{}, "model":{}, "events":{}, "usage":{}, "general":{}, "indexes":{}},
+    "geography":{"location":{}, "structure":{}, "model":{}, "events":{}, "usage":{}, "general":{}, "indexes":{}}
+}

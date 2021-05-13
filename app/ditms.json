@@ -1,0 +1,2317 @@
+{
+  "ANHM2FS8": {
+    "key": "ANHM2FS8",
+    "version": 179,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/ANHM2FS8",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/ANHM2FS8",
+        "type": "text/html"
+      },
+      "up": {
+        "href": "https://api.zotero.org/groups/3757017/items/86D9SAJ3",
+        "type": "application/json"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      }
+    },
+    "data": {
+      "key": "ANHM2FS8",
+      "version": 179,
+      "parentItem": {
+        "key": "86D9SAJ3",
+        "version": 191,
+        "library": {
+          "type": "group",
+          "id": 3757017,
+          "name": "Open History Map",
+          "links": {
+            "alternate": {
+              "href": "https://www.zotero.org/groups/open_history_map",
+              "type": "text/html"
+            }
+          }
+        },
+        "links": {
+          "self": {
+            "href": "https://api.zotero.org/groups/3757017/items/86D9SAJ3",
+            "type": "application/json"
+          },
+          "alternate": {
+            "href": "https://www.zotero.org/groups/open_history_map/items/86D9SAJ3",
+            "type": "text/html"
+          }
+        },
+        "meta": {
+          "createdByUser": {
+            "id": 2522574,
+            "username": "sirmmo",
+            "name": "",
+            "links": {
+              "alternate": {
+                "href": "https://www.zotero.org/sirmmo",
+                "type": "text/html"
+              }
+            }
+          },
+          "creatorSummary": "Ancient World Mapping Center",
+          "parsedDate": "2012",
+          "numChildren": 2
+        },
+        "data": {
+          "key": "86D9SAJ3",
+          "version": 191,
+          "itemType": "document",
+          "title": "Roman Aqueducts",
+          "creators": [
+            {
+              "creatorType": "author",
+              "name": "Ancient World Mapping Center"
+            }
+          ],
+          "abstractNote": "",
+          "publisher": "",
+          "date": "2012",
+          "language": "",
+          "shortTitle": "",
+          "url": "http://awmc.unc.edu/wordpress/map-files/",
+          "accessDate": "",
+          "archive": "",
+          "archiveLocation": "",
+          "libraryCatalog": "",
+          "callNumber": "",
+          "rights": "",
+          "extra": "",
+          "tags": {
+            "ohm:area": "geonames:6295630",
+            "ohm:dataset:all:format": "shapefile",
+            "ohm:dataset:all:type": "vector:geo",
+            "ohm:from_time": "-700",
+            "ohm:source_quality": "4",
+            "ohm:source_reliability": "6",
+            "ohm:to_time": "100",
+            "ohm:topic:topic": "location",
+            "ohm:topic": "infrastructure:water"
+          },
+          "collections": [],
+          "relations": {},
+          "dateAdded": "2021-05-12T13:46:55Z",
+          "dateModified": "2021-05-12T13:53:29Z"
+        }
+      },
+      "itemType": "attachment",
+      "linkMode": "linked_url",
+      "title": "dataset",
+      "accessDate": "",
+      "url": "http://awmc.unc.edu/awmc/map_data/shapefiles/aqueducts/",
+      "note": "",
+      "contentType": "",
+      "charset": "",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2021-05-12T13:51:38Z",
+      "dateModified": "2021-05-12T13:51:38Z"
+    }
+  },
+  "H4Z2JAZ7": {
+    "key": "H4Z2JAZ7",
+    "version": 177,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/H4Z2JAZ7",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/H4Z2JAZ7",
+        "type": "text/html"
+      },
+      "up": {
+        "href": "https://api.zotero.org/groups/3757017/items/86D9SAJ3",
+        "type": "application/json"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      },
+      "numChildren": 0
+    },
+    "data": {
+      "key": "H4Z2JAZ7",
+      "version": 177,
+      "parentItem": {
+        "key": "86D9SAJ3",
+        "version": 191,
+        "library": {
+          "type": "group",
+          "id": 3757017,
+          "name": "Open History Map",
+          "links": {
+            "alternate": {
+              "href": "https://www.zotero.org/groups/open_history_map",
+              "type": "text/html"
+            }
+          }
+        },
+        "links": {
+          "self": {
+            "href": "https://api.zotero.org/groups/3757017/items/86D9SAJ3",
+            "type": "application/json"
+          },
+          "alternate": {
+            "href": "https://www.zotero.org/groups/open_history_map/items/86D9SAJ3",
+            "type": "text/html"
+          }
+        },
+        "meta": {
+          "createdByUser": {
+            "id": 2522574,
+            "username": "sirmmo",
+            "name": "",
+            "links": {
+              "alternate": {
+                "href": "https://www.zotero.org/sirmmo",
+                "type": "text/html"
+              }
+            }
+          },
+          "creatorSummary": "Ancient World Mapping Center",
+          "parsedDate": "2012",
+          "numChildren": 2
+        },
+        "data": {
+          "key": "86D9SAJ3",
+          "version": 191,
+          "itemType": "document",
+          "title": "Roman Aqueducts",
+          "creators": [
+            {
+              "creatorType": "author",
+              "name": "Ancient World Mapping Center"
+            }
+          ],
+          "abstractNote": "",
+          "publisher": "",
+          "date": "2012",
+          "language": "",
+          "shortTitle": "",
+          "url": "http://awmc.unc.edu/wordpress/map-files/",
+          "accessDate": "",
+          "archive": "",
+          "archiveLocation": "",
+          "libraryCatalog": "",
+          "callNumber": "",
+          "rights": "",
+          "extra": "",
+          "tags": {
+            "ohm:area": "geonames:6295630",
+            "ohm:dataset:all:format": "shapefile",
+            "ohm:dataset:all:type": "vector:geo",
+            "ohm:from_time": "-700",
+            "ohm:source_quality": "4",
+            "ohm:source_reliability": "6",
+            "ohm:to_time": "100",
+            "ohm:topic:topic": "location",
+            "ohm:topic": "infrastructure:water"
+          },
+          "collections": [],
+          "relations": {},
+          "dateAdded": "2021-05-12T13:46:55Z",
+          "dateModified": "2021-05-12T13:53:29Z"
+        }
+      },
+      "itemType": "note",
+      "note": "<p><span style=\"color: #555555; font-family: Arial, Tahoma, Verdana, sans-serif; font-size: 12px; background-color: #ffffff;\">Aqueduct information derived from Talbert, Richard J. A., and Roger S. Bagnall. 2000.&nbsp;</span><em style=\"margin: 0px; padding: 0px; border: 0px; outline: 0px; font-size: 12px; vertical-align: baseline; background: #ffffff; color: #555555; font-family: Arial, Tahoma, Verdana, sans-serif;\">Barrington Atlas of the Greek and Roman World</em><span style=\"color: #555555; font-family: Arial, Tahoma, Verdana, sans-serif; font-size: 12px; background-color: #ffffff;\">. Princeton, N.J.: Princeton University Press</span></p>",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2021-05-12T13:48:34Z",
+      "dateModified": "2021-05-12T13:48:39Z"
+    }
+  },
+  "SWTWCT3I": {
+    "key": "SWTWCT3I",
+    "version": 170,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/SWTWCT3I",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/SWTWCT3I",
+        "type": "text/html"
+      },
+      "up": {
+        "href": "https://api.zotero.org/groups/3757017/items/BR7T4S68",
+        "type": "application/json"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      }
+    },
+    "data": {
+      "key": "SWTWCT3I",
+      "version": 170,
+      "parentItem": {
+        "key": "BR7T4S68",
+        "version": 169,
+        "library": {
+          "type": "group",
+          "id": 3757017,
+          "name": "Open History Map",
+          "links": {
+            "alternate": {
+              "href": "https://www.zotero.org/groups/open_history_map",
+              "type": "text/html"
+            }
+          }
+        },
+        "links": {
+          "self": {
+            "href": "https://api.zotero.org/groups/3757017/items/BR7T4S68",
+            "type": "application/json"
+          },
+          "alternate": {
+            "href": "https://www.zotero.org/groups/open_history_map/items/BR7T4S68",
+            "type": "text/html"
+          }
+        },
+        "meta": {
+          "createdByUser": {
+            "id": 2522574,
+            "username": "sirmmo",
+            "name": "",
+            "links": {
+              "alternate": {
+                "href": "https://www.zotero.org/sirmmo",
+                "type": "text/html"
+              }
+            }
+          },
+          "numChildren": 1
+        },
+        "data": {
+          "key": "BR7T4S68",
+          "version": 169,
+          "itemType": "document",
+          "title": "CLIWOC",
+          "creators": [],
+          "abstractNote": "",
+          "publisher": "",
+          "date": "",
+          "language": "",
+          "shortTitle": "",
+          "url": "https://webs.ucm.es/info/cliwoc/",
+          "accessDate": "",
+          "archive": "",
+          "archiveLocation": "",
+          "libraryCatalog": "",
+          "callNumber": "",
+          "rights": "",
+          "extra": "",
+          "tags": {
+            "ohm:area": "geonames:6295630",
+            "ohm:dataset:all:format": "csv",
+            "ohm:dataset:all:type": "vector:geo",
+            "ohm:from_time": "1750",
+            "ohm:source_quality": "6",
+            "ohm:source_reliability": "5",
+            "ohm:to_time": "1855",
+            "ohm:topic:topic": "location",
+            "ohm:topic": "climate"
+          },
+          "collections": [],
+          "relations": {},
+          "dateAdded": "2021-05-12T12:26:50Z",
+          "dateModified": "2021-05-12T12:26:50Z"
+        }
+      },
+      "itemType": "attachment",
+      "linkMode": "linked_url",
+      "title": "dataset",
+      "accessDate": "",
+      "url": "http://www.knmi.nl/cliwoc/download/CLIWOC15.zip",
+      "note": "",
+      "contentType": "",
+      "charset": "",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2021-05-12T12:27:27Z",
+      "dateModified": "2021-05-12T12:27:27Z"
+    }
+  },
+  "Q5C47IG7": {
+    "key": "Q5C47IG7",
+    "version": 149,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/Q5C47IG7",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/Q5C47IG7",
+        "type": "text/html"
+      },
+      "up": {
+        "href": "https://api.zotero.org/groups/3757017/items/442QJAZ8",
+        "type": "application/json"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      }
+    },
+    "data": {
+      "key": "Q5C47IG7",
+      "version": 149,
+      "parentItem": {
+        "key": "442QJAZ8",
+        "version": 158,
+        "library": {
+          "type": "group",
+          "id": 3757017,
+          "name": "Open History Map",
+          "links": {
+            "alternate": {
+              "href": "https://www.zotero.org/groups/open_history_map",
+              "type": "text/html"
+            }
+          }
+        },
+        "links": {
+          "self": {
+            "href": "https://api.zotero.org/groups/3757017/items/442QJAZ8",
+            "type": "application/json"
+          },
+          "alternate": {
+            "href": "https://www.zotero.org/groups/open_history_map/items/442QJAZ8",
+            "type": "text/html"
+          }
+        },
+        "meta": {
+          "createdByUser": {
+            "id": 2522574,
+            "username": "sirmmo",
+            "name": "",
+            "links": {
+              "alternate": {
+                "href": "https://www.zotero.org/sirmmo",
+                "type": "text/html"
+              }
+            }
+          },
+          "creatorSummary": "McCormick",
+          "parsedDate": "2013",
+          "numChildren": 1
+        },
+        "data": {
+          "key": "442QJAZ8",
+          "version": 158,
+          "itemType": "conferencePaper",
+          "title": "Roman Road Network",
+          "creators": [
+            {
+              "creatorType": "author",
+              "firstName": "M",
+              "lastName": "McCormick"
+            }
+          ],
+          "abstractNote": "",
+          "date": "2013",
+          "proceedingsTitle": "DARMC Scholarly Data Series 2013-5",
+          "conferenceName": "",
+          "place": "",
+          "publisher": "",
+          "volume": "",
+          "pages": "",
+          "series": "",
+          "language": "",
+          "DOI": "",
+          "ISBN": "",
+          "shortTitle": "",
+          "url": "https://docs.google.com/file/d/0B4KitLDpLpYfN3hKM3E2YWltWm8/edit?usp=sharing",
+          "accessDate": "",
+          "archive": "",
+          "archiveLocation": "",
+          "libraryCatalog": "",
+          "callNumber": "",
+          "rights": "",
+          "extra": "",
+          "tags": {
+            "ohm:dataset:all:format": "shapefile",
+            "ohm:dataset:all:type": "vector:geo",
+            "ohm:from_time": "-700",
+            "ohm:to_time": "500",
+            "ohm:topic:topic": "location",
+            "ohm:topic": "infrastructure:roads"
+          },
+          "collections": [],
+          "relations": {},
+          "dateAdded": "2021-05-12T12:14:43Z",
+          "dateModified": "2021-05-12T12:16:42Z"
+        }
+      },
+      "itemType": "attachment",
+      "linkMode": "linked_url",
+      "title": "dataset=Roman Road Network",
+      "accessDate": "",
+      "url": "https://docs.google.com/file/d/0B4KitLDpLpYfN3hKM3E2YWltWm8/edit?usp=sharing",
+      "note": "",
+      "contentType": "",
+      "charset": "",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2021-05-12T12:16:23Z",
+      "dateModified": "2021-05-12T12:16:23Z"
+    }
+  },
+  "8BHW8PTK": {
+    "key": "8BHW8PTK",
+    "version": 121,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/8BHW8PTK",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/8BHW8PTK",
+        "type": "text/html"
+      },
+      "up": {
+        "href": "https://api.zotero.org/groups/3757017/items/E82B3S7A",
+        "type": "application/json"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      }
+    },
+    "data": {
+      "key": "8BHW8PTK",
+      "version": 121,
+      "parentItem": {
+        "key": "E82B3S7A",
+        "version": 163,
+        "library": {
+          "type": "group",
+          "id": 3757017,
+          "name": "Open History Map",
+          "links": {
+            "alternate": {
+              "href": "https://www.zotero.org/groups/open_history_map",
+              "type": "text/html"
+            }
+          }
+        },
+        "links": {
+          "self": {
+            "href": "https://api.zotero.org/groups/3757017/items/E82B3S7A",
+            "type": "application/json"
+          },
+          "alternate": {
+            "href": "https://www.zotero.org/groups/open_history_map/items/E82B3S7A",
+            "type": "text/html"
+          }
+        },
+        "meta": {
+          "createdByUser": {
+            "id": 2522574,
+            "username": "sirmmo",
+            "name": "",
+            "links": {
+              "alternate": {
+                "href": "https://www.zotero.org/sirmmo",
+                "type": "text/html"
+              }
+            }
+          },
+          "creatorSummary": "Defense Digital Service",
+          "numChildren": 3
+        },
+        "data": {
+          "key": "E82B3S7A",
+          "version": 163,
+          "itemType": "document",
+          "title": "THOR Project-WW2",
+          "creators": [
+            {
+              "creatorType": "author",
+              "firstName": "",
+              "lastName": "Defense Digital Service"
+            }
+          ],
+          "abstractNote": "",
+          "publisher": "",
+          "date": "",
+          "language": "",
+          "shortTitle": "",
+          "url": "https://data.world/datamil/world-war-ii-thor-data",
+          "accessDate": "",
+          "archive": "",
+          "archiveLocation": "",
+          "libraryCatalog": "",
+          "callNumber": "",
+          "rights": "",
+          "extra": "",
+          "tags": {
+            "ohm:area": "geonames:6295630",
+            "ohm:dataset:all:format": "csv",
+            "ohm:dataset:all:type": "other",
+            "ohm:from_time": "1943",
+            "ohm:source_quality": "4",
+            "ohm:source_reliability": "6",
+            "ohm:to_time": "1945",
+            "ohm:topic:topic": "events",
+            "ohm:topic": "war"
+          },
+          "collections": [],
+          "relations": {},
+          "dateAdded": "2021-05-12T11:54:50Z",
+          "dateModified": "2021-05-12T11:57:10Z"
+        }
+      },
+      "itemType": "attachment",
+      "linkMode": "linked_url",
+      "title": "dataset=THOR_WWII_WEAPON_GLOSS",
+      "accessDate": "",
+      "url": "https://download.data.world/file_download/datamil/world-war-ii-thor-data/THOR_WWII_WEAPON_GLOSS.csv",
+      "note": "",
+      "contentType": "",
+      "charset": "",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2021-05-12T12:01:46Z",
+      "dateModified": "2021-05-12T12:01:46Z"
+    }
+  },
+  "Q5SQXW32": {
+    "key": "Q5SQXW32",
+    "version": 118,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/Q5SQXW32",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/Q5SQXW32",
+        "type": "text/html"
+      },
+      "up": {
+        "href": "https://api.zotero.org/groups/3757017/items/E82B3S7A",
+        "type": "application/json"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      }
+    },
+    "data": {
+      "key": "Q5SQXW32",
+      "version": 118,
+      "parentItem": {
+        "key": "E82B3S7A",
+        "version": 163,
+        "library": {
+          "type": "group",
+          "id": 3757017,
+          "name": "Open History Map",
+          "links": {
+            "alternate": {
+              "href": "https://www.zotero.org/groups/open_history_map",
+              "type": "text/html"
+            }
+          }
+        },
+        "links": {
+          "self": {
+            "href": "https://api.zotero.org/groups/3757017/items/E82B3S7A",
+            "type": "application/json"
+          },
+          "alternate": {
+            "href": "https://www.zotero.org/groups/open_history_map/items/E82B3S7A",
+            "type": "text/html"
+          }
+        },
+        "meta": {
+          "createdByUser": {
+            "id": 2522574,
+            "username": "sirmmo",
+            "name": "",
+            "links": {
+              "alternate": {
+                "href": "https://www.zotero.org/sirmmo",
+                "type": "text/html"
+              }
+            }
+          },
+          "creatorSummary": "Defense Digital Service",
+          "numChildren": 3
+        },
+        "data": {
+          "key": "E82B3S7A",
+          "version": 163,
+          "itemType": "document",
+          "title": "THOR Project-WW2",
+          "creators": [
+            {
+              "creatorType": "author",
+              "firstName": "",
+              "lastName": "Defense Digital Service"
+            }
+          ],
+          "abstractNote": "",
+          "publisher": "",
+          "date": "",
+          "language": "",
+          "shortTitle": "",
+          "url": "https://data.world/datamil/world-war-ii-thor-data",
+          "accessDate": "",
+          "archive": "",
+          "archiveLocation": "",
+          "libraryCatalog": "",
+          "callNumber": "",
+          "rights": "",
+          "extra": "",
+          "tags": {
+            "ohm:area": "geonames:6295630",
+            "ohm:dataset:all:format": "csv",
+            "ohm:dataset:all:type": "other",
+            "ohm:from_time": "1943",
+            "ohm:source_quality": "4",
+            "ohm:source_reliability": "6",
+            "ohm:to_time": "1945",
+            "ohm:topic:topic": "events",
+            "ohm:topic": "war"
+          },
+          "collections": [],
+          "relations": {},
+          "dateAdded": "2021-05-12T11:54:50Z",
+          "dateModified": "2021-05-12T11:57:10Z"
+        }
+      },
+      "itemType": "attachment",
+      "linkMode": "linked_url",
+      "title": "dataset=THOR_WWII_DATA_CLEAN",
+      "accessDate": "",
+      "url": "https://download.data.world/file_download/datamil/world-war-ii-thor-data/THOR_WWII_DATA_CLEAN.csv",
+      "note": "",
+      "contentType": "",
+      "charset": "",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2021-05-12T12:00:18Z",
+      "dateModified": "2021-05-12T12:00:18Z"
+    }
+  },
+  "VSNHRZB6": {
+    "key": "VSNHRZB6",
+    "version": 117,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/VSNHRZB6",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/VSNHRZB6",
+        "type": "text/html"
+      },
+      "up": {
+        "href": "https://api.zotero.org/groups/3757017/items/E82B3S7A",
+        "type": "application/json"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      }
+    },
+    "data": {
+      "key": "VSNHRZB6",
+      "version": 117,
+      "parentItem": {
+        "key": "E82B3S7A",
+        "version": 163,
+        "library": {
+          "type": "group",
+          "id": 3757017,
+          "name": "Open History Map",
+          "links": {
+            "alternate": {
+              "href": "https://www.zotero.org/groups/open_history_map",
+              "type": "text/html"
+            }
+          }
+        },
+        "links": {
+          "self": {
+            "href": "https://api.zotero.org/groups/3757017/items/E82B3S7A",
+            "type": "application/json"
+          },
+          "alternate": {
+            "href": "https://www.zotero.org/groups/open_history_map/items/E82B3S7A",
+            "type": "text/html"
+          }
+        },
+        "meta": {
+          "createdByUser": {
+            "id": 2522574,
+            "username": "sirmmo",
+            "name": "",
+            "links": {
+              "alternate": {
+                "href": "https://www.zotero.org/sirmmo",
+                "type": "text/html"
+              }
+            }
+          },
+          "creatorSummary": "Defense Digital Service",
+          "numChildren": 3
+        },
+        "data": {
+          "key": "E82B3S7A",
+          "version": 163,
+          "itemType": "document",
+          "title": "THOR Project-WW2",
+          "creators": [
+            {
+              "creatorType": "author",
+              "firstName": "",
+              "lastName": "Defense Digital Service"
+            }
+          ],
+          "abstractNote": "",
+          "publisher": "",
+          "date": "",
+          "language": "",
+          "shortTitle": "",
+          "url": "https://data.world/datamil/world-war-ii-thor-data",
+          "accessDate": "",
+          "archive": "",
+          "archiveLocation": "",
+          "libraryCatalog": "",
+          "callNumber": "",
+          "rights": "",
+          "extra": "",
+          "tags": {
+            "ohm:area": "geonames:6295630",
+            "ohm:dataset:all:format": "csv",
+            "ohm:dataset:all:type": "other",
+            "ohm:from_time": "1943",
+            "ohm:source_quality": "4",
+            "ohm:source_reliability": "6",
+            "ohm:to_time": "1945",
+            "ohm:topic:topic": "events",
+            "ohm:topic": "war"
+          },
+          "collections": [],
+          "relations": {},
+          "dateAdded": "2021-05-12T11:54:50Z",
+          "dateModified": "2021-05-12T11:57:10Z"
+        }
+      },
+      "itemType": "attachment",
+      "linkMode": "linked_url",
+      "title": "dataset=THOR_WWII_AIRCRAFT_GLOSS",
+      "accessDate": "",
+      "url": "https://download.data.world/file_download/datamil/world-war-ii-thor-data/THOR_WWII_AIRCRAFT_GLOSS.csv",
+      "note": "",
+      "contentType": "",
+      "charset": "",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2021-05-12T11:59:34Z",
+      "dateModified": "2021-05-12T11:59:34Z"
+    }
+  },
+  "YXRLBLIW": {
+    "key": "YXRLBLIW",
+    "version": 91,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/YXRLBLIW",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/YXRLBLIW",
+        "type": "text/html"
+      },
+      "up": {
+        "href": "https://api.zotero.org/groups/3757017/items/JDW29APT",
+        "type": "application/json"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      }
+    },
+    "data": {
+      "key": "YXRLBLIW",
+      "version": 91,
+      "parentItem": {
+        "key": "JDW29APT",
+        "version": 165,
+        "library": {
+          "type": "group",
+          "id": 3757017,
+          "name": "Open History Map",
+          "links": {
+            "alternate": {
+              "href": "https://www.zotero.org/groups/open_history_map",
+              "type": "text/html"
+            }
+          }
+        },
+        "links": {
+          "self": {
+            "href": "https://api.zotero.org/groups/3757017/items/JDW29APT",
+            "type": "application/json"
+          },
+          "alternate": {
+            "href": "https://www.zotero.org/groups/open_history_map/items/JDW29APT",
+            "type": "text/html"
+          }
+        },
+        "meta": {
+          "createdByUser": {
+            "id": 2522574,
+            "username": "sirmmo",
+            "name": "",
+            "links": {
+              "alternate": {
+                "href": "https://www.zotero.org/sirmmo",
+                "type": "text/html"
+              }
+            }
+          },
+          "numChildren": 1
+        },
+        "data": {
+          "key": "JDW29APT",
+          "version": 165,
+          "itemType": "document",
+          "title": "CLIWOC",
+          "creators": [],
+          "abstractNote": "",
+          "publisher": "",
+          "date": "",
+          "language": "",
+          "shortTitle": "",
+          "url": "https://webs.ucm.es/info/cliwoc/",
+          "accessDate": "",
+          "archive": "",
+          "archiveLocation": "",
+          "libraryCatalog": "",
+          "callNumber": "",
+          "rights": "",
+          "extra": "",
+          "tags": {
+            "ohm:area": "geonames:6295630",
+            "ohm:dataset:all:format": "csv",
+            "ohm:dataset:all:type": "vector:geo",
+            "ohm:from_time": "1750",
+            "ohm:source_quality": "6",
+            "ohm:source_reliability": "5",
+            "ohm:to_time": "1855",
+            "ohm:topic:topic": "location",
+            "ohm:topic": "ephemeral"
+          },
+          "collections": [],
+          "relations": {},
+          "dateAdded": "2021-05-10T22:03:27Z",
+          "dateModified": "2021-05-11T17:58:25Z"
+        }
+      },
+      "itemType": "attachment",
+      "linkMode": "linked_url",
+      "title": "dataset",
+      "accessDate": "2021-05-10T22:05:12Z",
+      "url": "http://www.knmi.nl/cliwoc/download/CLIWOC15.zip",
+      "note": "",
+      "contentType": "",
+      "charset": "",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2021-05-10T22:05:12Z",
+      "dateModified": "2021-05-10T22:05:12Z"
+    }
+  },
+  "DE8BQP4E": {
+    "key": "DE8BQP4E",
+    "version": 88,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/DE8BQP4E",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/DE8BQP4E",
+        "type": "text/html"
+      },
+      "up": {
+        "href": "https://api.zotero.org/groups/3757017/items/SMDD7SIT",
+        "type": "application/json"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      }
+    },
+    "data": {
+      "key": "DE8BQP4E",
+      "version": 88,
+      "parentItem": {
+        "key": "SMDD7SIT",
+        "version": 102,
+        "library": {
+          "type": "group",
+          "id": 3757017,
+          "name": "Open History Map",
+          "links": {
+            "alternate": {
+              "href": "https://www.zotero.org/groups/open_history_map",
+              "type": "text/html"
+            }
+          }
+        },
+        "links": {
+          "self": {
+            "href": "https://api.zotero.org/groups/3757017/items/SMDD7SIT",
+            "type": "application/json"
+          },
+          "alternate": {
+            "href": "https://www.zotero.org/groups/open_history_map/items/SMDD7SIT",
+            "type": "text/html"
+          }
+        },
+        "meta": {
+          "createdByUser": {
+            "id": 2522574,
+            "username": "sirmmo",
+            "name": "",
+            "links": {
+              "alternate": {
+                "href": "https://www.zotero.org/sirmmo",
+                "type": "text/html"
+              }
+            }
+          },
+          "numChildren": 1
+        },
+        "data": {
+          "key": "SMDD7SIT",
+          "version": 102,
+          "itemType": "document",
+          "title": "M\u00e9nestrel M\u00e9di\u00e9vistes sur le net : sources, travaux et r\u00e9f\u00e9rences en ligne",
+          "creators": [],
+          "abstractNote": "",
+          "publisher": "",
+          "date": "",
+          "language": "",
+          "shortTitle": "",
+          "url": "http://www.menestrel.fr/",
+          "accessDate": "",
+          "archive": "",
+          "archiveLocation": "",
+          "libraryCatalog": "",
+          "callNumber": "",
+          "rights": "",
+          "extra": "",
+          "tags": {
+            "ohm:area": "geonames:8354456",
+            "ohm:dataset:all:format": "shapefile",
+            "ohm:dataset:all:type": "vector:geo",
+            "ohm:from_time": "450",
+            "ohm:source_quality": "6",
+            "ohm:source_reliability": "6",
+            "ohm:to_time": "900",
+            "ohm:topic:topic": "location",
+            "ohm:topic": "politics"
+          },
+          "collections": [],
+          "relations": {},
+          "dateAdded": "2021-05-10T21:34:26Z",
+          "dateModified": "2021-05-11T17:58:48Z"
+        }
+      },
+      "itemType": "attachment",
+      "linkMode": "linked_url",
+      "title": "dataset=450",
+      "accessDate": "2021-05-10T21:58:40Z",
+      "url": "http://www.menestrel.fr/IMG/zip/450-2.zip",
+      "note": "",
+      "contentType": "",
+      "charset": "",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2021-05-10T21:58:40Z",
+      "dateModified": "2021-05-10T21:58:40Z"
+    }
+  },
+  "KI8ZD2KC": {
+    "key": "KI8ZD2KC",
+    "version": 85,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/KI8ZD2KC",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/KI8ZD2KC",
+        "type": "text/html"
+      },
+      "up": {
+        "href": "https://api.zotero.org/groups/3757017/items/N2L7TA7Y",
+        "type": "application/json"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      }
+    },
+    "data": {
+      "key": "KI8ZD2KC",
+      "version": 85,
+      "parentItem": {
+        "key": "N2L7TA7Y",
+        "version": 100,
+        "library": {
+          "type": "group",
+          "id": 3757017,
+          "name": "Open History Map",
+          "links": {
+            "alternate": {
+              "href": "https://www.zotero.org/groups/open_history_map",
+              "type": "text/html"
+            }
+          }
+        },
+        "links": {
+          "self": {
+            "href": "https://api.zotero.org/groups/3757017/items/N2L7TA7Y",
+            "type": "application/json"
+          },
+          "alternate": {
+            "href": "https://www.zotero.org/groups/open_history_map/items/N2L7TA7Y",
+            "type": "text/html"
+          }
+        },
+        "meta": {
+          "createdByUser": {
+            "id": 2522574,
+            "username": "sirmmo",
+            "name": "",
+            "links": {
+              "alternate": {
+                "href": "https://www.zotero.org/sirmmo",
+                "type": "text/html"
+              }
+            }
+          },
+          "numChildren": 2
+        },
+        "data": {
+          "key": "N2L7TA7Y",
+          "version": 100,
+          "itemType": "document",
+          "title": "M\u00e9nestrel M\u00e9di\u00e9vistes sur le net : sources, travaux et r\u00e9f\u00e9rences en ligne",
+          "creators": [],
+          "abstractNote": "",
+          "publisher": "",
+          "date": "",
+          "language": "",
+          "shortTitle": "",
+          "url": "http://www.menestrel.fr/",
+          "accessDate": "",
+          "archive": "",
+          "archiveLocation": "",
+          "libraryCatalog": "",
+          "callNumber": "",
+          "rights": "",
+          "extra": "",
+          "tags": {
+            "ohm:area": "geonames:8354456",
+            "ohm:dataset:all:format": "shapefile",
+            "ohm:dataset:all:type": "vector:geo",
+            "ohm:from_time": "500",
+            "ohm:source_quality": "6",
+            "ohm:source_reliability": "6",
+            "ohm:to_time": "1600",
+            "ohm:topic:topic": "location",
+            "ohm:topic": "religion"
+          },
+          "collections": [],
+          "relations": {},
+          "dateAdded": "2021-05-10T21:19:57Z",
+          "dateModified": "2021-05-11T17:58:41Z"
+        }
+      },
+      "itemType": "attachment",
+      "linkMode": "linked_url",
+      "title": "dataset=bishoprics:africa",
+      "accessDate": "2021-05-10T21:32:39Z",
+      "url": "http://www.menestrel.fr/IMG/zip/afrique.zip",
+      "note": "",
+      "contentType": "",
+      "charset": "",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2021-05-10T21:32:39Z",
+      "dateModified": "2021-05-10T21:32:39Z"
+    }
+  },
+  "N6LJXX7D": {
+    "key": "N6LJXX7D",
+    "version": 84,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/N6LJXX7D",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/N6LJXX7D",
+        "type": "text/html"
+      },
+      "up": {
+        "href": "https://api.zotero.org/groups/3757017/items/N2L7TA7Y",
+        "type": "application/json"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      }
+    },
+    "data": {
+      "key": "N6LJXX7D",
+      "version": 84,
+      "parentItem": {
+        "key": "N2L7TA7Y",
+        "version": 100,
+        "library": {
+          "type": "group",
+          "id": 3757017,
+          "name": "Open History Map",
+          "links": {
+            "alternate": {
+              "href": "https://www.zotero.org/groups/open_history_map",
+              "type": "text/html"
+            }
+          }
+        },
+        "links": {
+          "self": {
+            "href": "https://api.zotero.org/groups/3757017/items/N2L7TA7Y",
+            "type": "application/json"
+          },
+          "alternate": {
+            "href": "https://www.zotero.org/groups/open_history_map/items/N2L7TA7Y",
+            "type": "text/html"
+          }
+        },
+        "meta": {
+          "createdByUser": {
+            "id": 2522574,
+            "username": "sirmmo",
+            "name": "",
+            "links": {
+              "alternate": {
+                "href": "https://www.zotero.org/sirmmo",
+                "type": "text/html"
+              }
+            }
+          },
+          "numChildren": 2
+        },
+        "data": {
+          "key": "N2L7TA7Y",
+          "version": 100,
+          "itemType": "document",
+          "title": "M\u00e9nestrel M\u00e9di\u00e9vistes sur le net : sources, travaux et r\u00e9f\u00e9rences en ligne",
+          "creators": [],
+          "abstractNote": "",
+          "publisher": "",
+          "date": "",
+          "language": "",
+          "shortTitle": "",
+          "url": "http://www.menestrel.fr/",
+          "accessDate": "",
+          "archive": "",
+          "archiveLocation": "",
+          "libraryCatalog": "",
+          "callNumber": "",
+          "rights": "",
+          "extra": "",
+          "tags": {
+            "ohm:area": "geonames:8354456",
+            "ohm:dataset:all:format": "shapefile",
+            "ohm:dataset:all:type": "vector:geo",
+            "ohm:from_time": "500",
+            "ohm:source_quality": "6",
+            "ohm:source_reliability": "6",
+            "ohm:to_time": "1600",
+            "ohm:topic:topic": "location",
+            "ohm:topic": "religion"
+          },
+          "collections": [],
+          "relations": {},
+          "dateAdded": "2021-05-10T21:19:57Z",
+          "dateModified": "2021-05-11T17:58:41Z"
+        }
+      },
+      "itemType": "attachment",
+      "linkMode": "linked_url",
+      "title": "dataset=bishoprics:500",
+      "accessDate": "2021-05-10T21:22:46Z",
+      "url": "http://www.menestrel.fr/IMG/zip/eveches500-3.zip",
+      "note": "",
+      "contentType": "",
+      "charset": "",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2021-05-10T21:22:46Z",
+      "dateModified": "2021-05-10T21:22:46Z"
+    }
+  },
+  "9ZRZDVDJ": {
+    "key": "9ZRZDVDJ",
+    "version": 79,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/9ZRZDVDJ",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/9ZRZDVDJ",
+        "type": "text/html"
+      },
+      "up": {
+        "href": "https://api.zotero.org/groups/3757017/items/IQBW3YU6",
+        "type": "application/json"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      }
+    },
+    "data": {
+      "key": "9ZRZDVDJ",
+      "version": 79,
+      "parentItem": {
+        "key": "IQBW3YU6",
+        "version": 98,
+        "library": {
+          "type": "group",
+          "id": 3757017,
+          "name": "Open History Map",
+          "links": {
+            "alternate": {
+              "href": "https://www.zotero.org/groups/open_history_map",
+              "type": "text/html"
+            }
+          }
+        },
+        "links": {
+          "self": {
+            "href": "https://api.zotero.org/groups/3757017/items/IQBW3YU6",
+            "type": "application/json"
+          },
+          "alternate": {
+            "href": "https://www.zotero.org/groups/open_history_map/items/IQBW3YU6",
+            "type": "text/html"
+          }
+        },
+        "meta": {
+          "createdByUser": {
+            "id": 2522574,
+            "username": "sirmmo",
+            "name": "",
+            "links": {
+              "alternate": {
+                "href": "https://www.zotero.org/sirmmo",
+                "type": "text/html"
+              }
+            }
+          },
+          "numChildren": 2
+        },
+        "data": {
+          "key": "IQBW3YU6",
+          "version": 98,
+          "itemType": "document",
+          "title": "ThinkQuest archive",
+          "creators": [],
+          "abstractNote": "",
+          "publisher": "",
+          "date": "",
+          "language": "",
+          "shortTitle": "",
+          "url": "http://web.archive.org/web/20080328104539/http://library.thinkquest.org:80/C006628/download.html",
+          "accessDate": "",
+          "archive": "",
+          "archiveLocation": "",
+          "libraryCatalog": "",
+          "callNumber": "",
+          "rights": "",
+          "extra": "",
+          "tags": {
+            "ohm:area": "geonames:6295630",
+            "ohm:dataset:all:format": "shapefile",
+            "ohm:dataset:all:type": "vector:geo",
+            "ohm:from_time": "-8000",
+            "ohm:source_quality": "3",
+            "ohm:source_reliability": "3",
+            "ohm:to_time": "2000",
+            "ohm:topic:topic": "location",
+            "ohm:topic": "politics"
+          },
+          "collections": [],
+          "relations": {},
+          "dateAdded": "2021-05-10T19:29:02Z",
+          "dateModified": "2021-05-11T17:58:55Z"
+        }
+      },
+      "itemType": "attachment",
+      "linkMode": "linked_url",
+      "title": "dataset=1000BC",
+      "accessDate": "2021-05-10T20:01:49Z",
+      "url": "http://web.archive.org/web/20080328104539/http://library.thinkquest.org:80/C006628/data/1000BC.zip",
+      "note": "",
+      "contentType": "",
+      "charset": "",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2021-05-10T20:01:49Z",
+      "dateModified": "2021-05-10T20:01:49Z"
+    }
+  },
+  "55L7FMCS": {
+    "key": "55L7FMCS",
+    "version": 78,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/55L7FMCS",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/55L7FMCS",
+        "type": "text/html"
+      },
+      "up": {
+        "href": "https://api.zotero.org/groups/3757017/items/IQBW3YU6",
+        "type": "application/json"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      }
+    },
+    "data": {
+      "key": "55L7FMCS",
+      "version": 78,
+      "parentItem": {
+        "key": "IQBW3YU6",
+        "version": 98,
+        "library": {
+          "type": "group",
+          "id": 3757017,
+          "name": "Open History Map",
+          "links": {
+            "alternate": {
+              "href": "https://www.zotero.org/groups/open_history_map",
+              "type": "text/html"
+            }
+          }
+        },
+        "links": {
+          "self": {
+            "href": "https://api.zotero.org/groups/3757017/items/IQBW3YU6",
+            "type": "application/json"
+          },
+          "alternate": {
+            "href": "https://www.zotero.org/groups/open_history_map/items/IQBW3YU6",
+            "type": "text/html"
+          }
+        },
+        "meta": {
+          "createdByUser": {
+            "id": 2522574,
+            "username": "sirmmo",
+            "name": "",
+            "links": {
+              "alternate": {
+                "href": "https://www.zotero.org/sirmmo",
+                "type": "text/html"
+              }
+            }
+          },
+          "numChildren": 2
+        },
+        "data": {
+          "key": "IQBW3YU6",
+          "version": 98,
+          "itemType": "document",
+          "title": "ThinkQuest archive",
+          "creators": [],
+          "abstractNote": "",
+          "publisher": "",
+          "date": "",
+          "language": "",
+          "shortTitle": "",
+          "url": "http://web.archive.org/web/20080328104539/http://library.thinkquest.org:80/C006628/download.html",
+          "accessDate": "",
+          "archive": "",
+          "archiveLocation": "",
+          "libraryCatalog": "",
+          "callNumber": "",
+          "rights": "",
+          "extra": "",
+          "tags": {
+            "ohm:area": "geonames:6295630",
+            "ohm:dataset:all:format": "shapefile",
+            "ohm:dataset:all:type": "vector:geo",
+            "ohm:from_time": "-8000",
+            "ohm:source_quality": "3",
+            "ohm:source_reliability": "3",
+            "ohm:to_time": "2000",
+            "ohm:topic:topic": "location",
+            "ohm:topic": "politics"
+          },
+          "collections": [],
+          "relations": {},
+          "dateAdded": "2021-05-10T19:29:02Z",
+          "dateModified": "2021-05-11T17:58:55Z"
+        }
+      },
+      "itemType": "attachment",
+      "linkMode": "linked_url",
+      "title": "dataset=2000BC",
+      "accessDate": "2021-05-10T20:01:31Z",
+      "url": "http://web.archive.org/web/20080328104539/http://library.thinkquest.org:80/C006628/data/2000BC.zip",
+      "note": "",
+      "contentType": "",
+      "charset": "",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2021-05-10T20:01:31Z",
+      "dateModified": "2021-05-10T20:01:31Z"
+    }
+  },
+  "6C6H3KVA": {
+    "key": "6C6H3KVA",
+    "version": 59,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/6C6H3KVA",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/6C6H3KVA",
+        "type": "text/html"
+      },
+      "up": {
+        "href": "https://api.zotero.org/groups/3757017/items/F6655FZP",
+        "type": "application/json"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      }
+    },
+    "data": {
+      "key": "6C6H3KVA",
+      "version": 59,
+      "parentItem": {
+        "key": "F6655FZP",
+        "version": 96,
+        "library": {
+          "type": "group",
+          "id": 3757017,
+          "name": "Open History Map",
+          "links": {
+            "alternate": {
+              "href": "https://www.zotero.org/groups/open_history_map",
+              "type": "text/html"
+            }
+          }
+        },
+        "links": {
+          "self": {
+            "href": "https://api.zotero.org/groups/3757017/items/F6655FZP",
+            "type": "application/json"
+          },
+          "alternate": {
+            "href": "https://www.zotero.org/groups/open_history_map/items/F6655FZP",
+            "type": "text/html"
+          }
+        },
+        "meta": {
+          "createdByUser": {
+            "id": 2522574,
+            "username": "sirmmo",
+            "name": "",
+            "links": {
+              "alternate": {
+                "href": "https://www.zotero.org/sirmmo",
+                "type": "text/html"
+              }
+            }
+          },
+          "creatorSummary": "Lucia Marsicano",
+          "numChildren": 5
+        },
+        "data": {
+          "key": "F6655FZP",
+          "version": 96,
+          "itemType": "document",
+          "title": "Entertainment in the Roman Age",
+          "creators": [
+            {
+              "creatorType": "author",
+              "firstName": "",
+              "lastName": "Lucia Marsicano"
+            }
+          ],
+          "abstractNote": "",
+          "publisher": "",
+          "date": "",
+          "language": "",
+          "shortTitle": "",
+          "url": "https://archeolucia.geocontext.info/#/map",
+          "accessDate": "",
+          "archive": "",
+          "archiveLocation": "",
+          "libraryCatalog": "",
+          "callNumber": "",
+          "rights": "",
+          "extra": "",
+          "tags": {
+            "ohm:area": "geonames:8354456",
+            "ohm:dataset:all:format": "geojson",
+            "ohm:dataset:all:type": "vector:geo",
+            "ohm:from_time": "-390",
+            "ohm:source_quality": "6",
+            "ohm:source_reliability": "5",
+            "ohm:to_time": "100",
+            "ohm:topic:topic": "location",
+            "ohm:topic": "entertainment"
+          },
+          "collections": [],
+          "relations": {},
+          "dateAdded": "2021-05-07T11:10:50Z",
+          "dateModified": "2021-05-11T17:59:03Z"
+        }
+      },
+      "itemType": "attachment",
+      "linkMode": "linked_url",
+      "title": "dataset=theatres",
+      "accessDate": "",
+      "url": "https://raw.githubusercontent.com/Archeolucia/theatres/main/datasets/theatres.geojson",
+      "note": "",
+      "contentType": "",
+      "charset": "",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2021-05-07T12:44:23Z",
+      "dateModified": "2021-05-07T12:44:23Z"
+    }
+  },
+  "XXE5V57I": {
+    "key": "XXE5V57I",
+    "version": 58,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/XXE5V57I",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/XXE5V57I",
+        "type": "text/html"
+      },
+      "up": {
+        "href": "https://api.zotero.org/groups/3757017/items/F6655FZP",
+        "type": "application/json"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      }
+    },
+    "data": {
+      "key": "XXE5V57I",
+      "version": 58,
+      "parentItem": {
+        "key": "F6655FZP",
+        "version": 96,
+        "library": {
+          "type": "group",
+          "id": 3757017,
+          "name": "Open History Map",
+          "links": {
+            "alternate": {
+              "href": "https://www.zotero.org/groups/open_history_map",
+              "type": "text/html"
+            }
+          }
+        },
+        "links": {
+          "self": {
+            "href": "https://api.zotero.org/groups/3757017/items/F6655FZP",
+            "type": "application/json"
+          },
+          "alternate": {
+            "href": "https://www.zotero.org/groups/open_history_map/items/F6655FZP",
+            "type": "text/html"
+          }
+        },
+        "meta": {
+          "createdByUser": {
+            "id": 2522574,
+            "username": "sirmmo",
+            "name": "",
+            "links": {
+              "alternate": {
+                "href": "https://www.zotero.org/sirmmo",
+                "type": "text/html"
+              }
+            }
+          },
+          "creatorSummary": "Lucia Marsicano",
+          "numChildren": 5
+        },
+        "data": {
+          "key": "F6655FZP",
+          "version": 96,
+          "itemType": "document",
+          "title": "Entertainment in the Roman Age",
+          "creators": [
+            {
+              "creatorType": "author",
+              "firstName": "",
+              "lastName": "Lucia Marsicano"
+            }
+          ],
+          "abstractNote": "",
+          "publisher": "",
+          "date": "",
+          "language": "",
+          "shortTitle": "",
+          "url": "https://archeolucia.geocontext.info/#/map",
+          "accessDate": "",
+          "archive": "",
+          "archiveLocation": "",
+          "libraryCatalog": "",
+          "callNumber": "",
+          "rights": "",
+          "extra": "",
+          "tags": {
+            "ohm:area": "geonames:8354456",
+            "ohm:dataset:all:format": "geojson",
+            "ohm:dataset:all:type": "vector:geo",
+            "ohm:from_time": "-390",
+            "ohm:source_quality": "6",
+            "ohm:source_reliability": "5",
+            "ohm:to_time": "100",
+            "ohm:topic:topic": "location",
+            "ohm:topic": "entertainment"
+          },
+          "collections": [],
+          "relations": {},
+          "dateAdded": "2021-05-07T11:10:50Z",
+          "dateModified": "2021-05-11T17:59:03Z"
+        }
+      },
+      "itemType": "attachment",
+      "linkMode": "linked_url",
+      "title": "dataset=stadiums",
+      "accessDate": "",
+      "url": "https://raw.githubusercontent.com/Archeolucia/theatres/main/datasets/stadiums.geojson",
+      "note": "",
+      "contentType": "",
+      "charset": "",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2021-05-07T12:44:11Z",
+      "dateModified": "2021-05-07T12:44:11Z"
+    }
+  },
+  "D32UAQTT": {
+    "key": "D32UAQTT",
+    "version": 57,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/D32UAQTT",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/D32UAQTT",
+        "type": "text/html"
+      },
+      "up": {
+        "href": "https://api.zotero.org/groups/3757017/items/F6655FZP",
+        "type": "application/json"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      }
+    },
+    "data": {
+      "key": "D32UAQTT",
+      "version": 57,
+      "parentItem": {
+        "key": "F6655FZP",
+        "version": 96,
+        "library": {
+          "type": "group",
+          "id": 3757017,
+          "name": "Open History Map",
+          "links": {
+            "alternate": {
+              "href": "https://www.zotero.org/groups/open_history_map",
+              "type": "text/html"
+            }
+          }
+        },
+        "links": {
+          "self": {
+            "href": "https://api.zotero.org/groups/3757017/items/F6655FZP",
+            "type": "application/json"
+          },
+          "alternate": {
+            "href": "https://www.zotero.org/groups/open_history_map/items/F6655FZP",
+            "type": "text/html"
+          }
+        },
+        "meta": {
+          "createdByUser": {
+            "id": 2522574,
+            "username": "sirmmo",
+            "name": "",
+            "links": {
+              "alternate": {
+                "href": "https://www.zotero.org/sirmmo",
+                "type": "text/html"
+              }
+            }
+          },
+          "creatorSummary": "Lucia Marsicano",
+          "numChildren": 5
+        },
+        "data": {
+          "key": "F6655FZP",
+          "version": 96,
+          "itemType": "document",
+          "title": "Entertainment in the Roman Age",
+          "creators": [
+            {
+              "creatorType": "author",
+              "firstName": "",
+              "lastName": "Lucia Marsicano"
+            }
+          ],
+          "abstractNote": "",
+          "publisher": "",
+          "date": "",
+          "language": "",
+          "shortTitle": "",
+          "url": "https://archeolucia.geocontext.info/#/map",
+          "accessDate": "",
+          "archive": "",
+          "archiveLocation": "",
+          "libraryCatalog": "",
+          "callNumber": "",
+          "rights": "",
+          "extra": "",
+          "tags": {
+            "ohm:area": "geonames:8354456",
+            "ohm:dataset:all:format": "geojson",
+            "ohm:dataset:all:type": "vector:geo",
+            "ohm:from_time": "-390",
+            "ohm:source_quality": "6",
+            "ohm:source_reliability": "5",
+            "ohm:to_time": "100",
+            "ohm:topic:topic": "location",
+            "ohm:topic": "entertainment"
+          },
+          "collections": [],
+          "relations": {},
+          "dateAdded": "2021-05-07T11:10:50Z",
+          "dateModified": "2021-05-11T17:59:03Z"
+        }
+      },
+      "itemType": "attachment",
+      "linkMode": "linked_url",
+      "title": "dataset=amphitheatres",
+      "accessDate": "",
+      "url": "https://raw.githubusercontent.com/Archeolucia/theatres/main/datasets/amphitheatres.geojson",
+      "note": "",
+      "contentType": "",
+      "charset": "",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2021-05-07T12:43:56Z",
+      "dateModified": "2021-05-07T12:43:56Z"
+    }
+  },
+  "87M2QU9T": {
+    "key": "87M2QU9T",
+    "version": 53,
+    "library": {
+      "type": "group",
+      "id": 3757017,
+      "name": "Open History Map",
+      "links": {
+        "alternate": {
+          "href": "https://www.zotero.org/groups/open_history_map",
+          "type": "text/html"
+        }
+      }
+    },
+    "links": {
+      "self": {
+        "href": "https://api.zotero.org/groups/3757017/items/87M2QU9T",
+        "type": "application/json"
+      },
+      "alternate": {
+        "href": "https://www.zotero.org/groups/open_history_map/items/87M2QU9T",
+        "type": "text/html"
+      },
+      "up": {
+        "href": "https://api.zotero.org/groups/3757017/items/F6655FZP",
+        "type": "application/json"
+      }
+    },
+    "meta": {
+      "createdByUser": {
+        "id": 2522574,
+        "username": "sirmmo",
+        "name": "",
+        "links": {
+          "alternate": {
+            "href": "https://www.zotero.org/sirmmo",
+            "type": "text/html"
+          }
+        }
+      }
+    },
+    "data": {
+      "key": "87M2QU9T",
+      "version": 53,
+      "parentItem": {
+        "key": "F6655FZP",
+        "version": 96,
+        "library": {
+          "type": "group",
+          "id": 3757017,
+          "name": "Open History Map",
+          "links": {
+            "alternate": {
+              "href": "https://www.zotero.org/groups/open_history_map",
+              "type": "text/html"
+            }
+          }
+        },
+        "links": {
+          "self": {
+            "href": "https://api.zotero.org/groups/3757017/items/F6655FZP",
+            "type": "application/json"
+          },
+          "alternate": {
+            "href": "https://www.zotero.org/groups/open_history_map/items/F6655FZP",
+            "type": "text/html"
+          }
+        },
+        "meta": {
+          "createdByUser": {
+            "id": 2522574,
+            "username": "sirmmo",
+            "name": "",
+            "links": {
+              "alternate": {
+                "href": "https://www.zotero.org/sirmmo",
+                "type": "text/html"
+              }
+            }
+          },
+          "creatorSummary": "Lucia Marsicano",
+          "numChildren": 5
+        },
+        "data": {
+          "key": "F6655FZP",
+          "version": 96,
+          "itemType": "document",
+          "title": "Entertainment in the Roman Age",
+          "creators": [
+            {
+              "creatorType": "author",
+              "firstName": "",
+              "lastName": "Lucia Marsicano"
+            }
+          ],
+          "abstractNote": "",
+          "publisher": "",
+          "date": "",
+          "language": "",
+          "shortTitle": "",
+          "url": "https://archeolucia.geocontext.info/#/map",
+          "accessDate": "",
+          "archive": "",
+          "archiveLocation": "",
+          "libraryCatalog": "",
+          "callNumber": "",
+          "rights": "",
+          "extra": "",
+          "tags": {
+            "ohm:area": "geonames:8354456",
+            "ohm:dataset:all:format": "geojson",
+            "ohm:dataset:all:type": "vector:geo",
+            "ohm:from_time": "-390",
+            "ohm:source_quality": "6",
+            "ohm:source_reliability": "5",
+            "ohm:to_time": "100",
+            "ohm:topic:topic": "location",
+            "ohm:topic": "entertainment"
+          },
+          "collections": [],
+          "relations": {},
+          "dateAdded": "2021-05-07T11:10:50Z",
+          "dateModified": "2021-05-11T17:59:03Z"
+        }
+      },
+      "itemType": "attachment",
+      "linkMode": "linked_url",
+      "title": "dataset=circuses",
+      "accessDate": "",
+      "url": "https://github.com/Archeolucia/theatres/raw/main/datasets/circuses.geojson",
+      "note": "",
+      "contentType": "",
+      "charset": "",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2021-05-07T12:42:10Z",
+      "dateModified": "2021-05-07T12:42:10Z"
+    }
+  }
+}
