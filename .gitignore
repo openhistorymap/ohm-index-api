@@ -2,3 +2,9 @@ bin
 include
 lib
 share
+
+app/ditms.json
+app/dump.json
+app/tags.feather
+app/pitms.json
+
