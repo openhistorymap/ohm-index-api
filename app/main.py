@@ -176,6 +176,14 @@ def pull_items():
 @app.route('/index')
 def coverage():
     top_s = list(topics.keys())
+    area = request.args.get('ohm:area__in', '').split(",")
+    area_filter = None
+    if len(area) == 1 and len(area[0]) == 0:
+        area_filter = None
+    else:
+        area_filter = []
+        for gid in area:
+            area_filter.append('geonames:{}'.format(gid))
 
     combos = itertools.product(years, top_s)
     tags = request.args.get('tags', '').split('|')
@@ -188,6 +196,9 @@ def coverage():
                 (dd['ohm:to_time']>=g[0][0])
             )]
         tdd = ndd[ndd['ohm:topic'] == g[1]]
+        if area_filter:
+            atdd = tdd[tdd['ohm:area'].isin(area_filter)]
+            tdd = atdd
         ret.append({
             'interval': [g[0][0], g[0][1]], 
             "topic":  g[1], 
