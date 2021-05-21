@@ -216,11 +216,11 @@ def flt_sources(args):
         conds = []
         for k in args.keys():
             if k == 'ohm:from_time':
-                conds.append(x['data']['tags']['ohm:to_time'] > args.get(k))
+                conds.append(x['data']['tags'].get('ohm:to_time') > args.get(k))
             if k == 'ohm:to_time':
-                conds.append(x['data']['tags']['ohm:from_time'] < args.get(k))
+                conds.append(x['data']['tags'].get('ohm:from_time') < args.get(k))
             if k == 'ohm:topic':
-                conds.append(x['data']['tags']['ohm:topic'] == args.get(k))
+                conds.append(x['data']['tags'].get('ohm:topic') == args.get(k))
         return all(conds)
     return func
 
