@@ -4,7 +4,7 @@ import json
 import pandas as pd
 import copy
 from flask_cors import CORS
-
+import requests
 import itertools
 import os
 
@@ -22,6 +22,7 @@ years = list(
     ) + [[0, 500]] + list(
         zip(list(range(500,2000,250)), list(range(750,2250,250)))
     )
+
 
 
 zot = zotero.Zotero(OHM_LIB, 'group', ZOT_API)
@@ -61,6 +62,28 @@ def push():
     print(request.body)
     return "ok"
     
+
+def traverse(root, branch):
+    if not branch:
+        return
+    if branch[0] not in root:
+        root[branch[0]] = {}
+    print(root, branch)
+    traverse(root[branch[0]], branch[1:])
+
+
+# Or rather, uglify
+def prettify(root):
+    res = []
+    for k, v in root.iteritems():
+        d = {}
+        d['name'] = k
+        d['children'] = prettify(v)
+        res.append(d)
+    return res
+
+
+
 @app.route('/pull')
 def pull_items():
     itms = zot.everything(zot.items())
@@ -73,6 +96,8 @@ def pull_items():
 
     ditms = {}
     dditms = {}
+
+    areas = []
 
     for x in itms:
         if 'parentItem' in x['data']:
@@ -88,6 +113,36 @@ def pull_items():
         if 'parentItem' not in x['data']:
             pitms[x['key']] = copy.deepcopy(x)
             ppitms[x['key']] = copy.deepcopy(x)
+        for t in tt.keys():
+            if t == 'ohm:area':
+                areas.append(tt[t].split(':')[1])
+
+    areas = list(set(areas))
+    areash = []
+    for a in areas:
+        try:
+            jj = requests.get('http://api.geonames.org/hierarchyJSON?formatted=true&geonameId={}&username={}&style=full'.format(a, 'openhistorymap'))
+            jj = jj.json()
+            areash.append(jj.get('geonames'))
+        except Exception as ex:
+            print(ex)
+    json.dump(areash, open('geonames.json', 'w+'))
+    areainfo = {}
+    areatree = {}
+    branches = []
+    for h in areash:
+        chain = []
+        for s in h:
+            areainfo[s['geonameId']] = s
+            chain.append(str(s['geonameId']))
+        branches.append(chain)
+
+    json.dump(areainfo, open('geonames.labels', 'w+'))
+    json.dump(branches, open('geonames.branches', 'w+'))
+    
+    for b in branches:
+        traverse(areatree, b)
+    json.dump(areatree, open('geonames.tree', 'w+'))
 
     for d in dditms.keys():
         ditms[d]['data']['parentItem'] = copy.deepcopy(ppitms[dditms[d]['data']['parentItem']])
@@ -144,11 +199,15 @@ def coverage():
 
 @app.route('/indices')
 def indicators():
+    areas = json.load(open('geonames.labels'))
+    trees = json.load(open('geonames.tree'))
     l = copy.deepcopy(years)
     l.reverse()
     return {
         "years": l,
-        "topics": topics
+        "topics": topics,
+        "areas": areas,
+        "trees": trees,
     }
 
     
@@ -171,6 +230,14 @@ def references():
     itms = list(json.load(open('pitms.json')).values())
     fitms = list(filter(flt_sources(tags), itms))
     return json.dumps(fitms)
+    #dd = pd.read_feather('tags.feather')
+    #return dd.to_json(orient="records")
+
+    
+@app.route('/sources/<id>')
+def reference(id):
+    itm = json.load(open('pitms.json')).get(id)
+    return json.dumps(itm)
     #dd = pd.read_feather('tags.feather')
     #return dd.to_json(orient="records")
 
@@ -199,7 +266,12 @@ def datasets():
     #dd = pd.read_feather('tags.feather')
     #return dd.to_json(orient="records")
 
+@app.route('/datasets/<id>')
+def dataset(id):
+    itm = json.load(open('ditms.json')).get(id)
+    return json.dumps(itm)
+
 CORS(app)
 
 if __name__ == '__main__':
-    a = app.run(port=9033, host="0.0.0.0", debug=True)
+    a = app.run(port=9038, host="0.0.0.0", debug=True)
