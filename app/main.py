@@ -226,11 +226,11 @@ def flt_sources(args):
     def func(x):
         conds = []
         for k in args.keys():
-            if k == 'ohm:from_time':
+            if k == 'ohm:from_time' and 'ohm:to_time' in x['data']['tags']:
                 conds.append(x['data']['tags'].get('ohm:to_time') > args.get(k))
-            if k == 'ohm:to_time':
+            if k == 'ohm:to_time' and 'ohm:from_time' in x['data']['tags']:
                 conds.append(x['data']['tags'].get('ohm:from_time') < args.get(k))
-            if k == 'ohm:topic':
+            if k == 'ohm:topic' and 'ohm:topic' in x['data']['tags']:
                 conds.append(x['data']['tags'].get('ohm:topic') == args.get(k))
         return all(conds)
     return func
@@ -259,10 +259,12 @@ def flt_ds(args):
         for k in args.keys():
             if k == 'for':
                 conds.append(x['data']['parentItem']['key'] == args.get(k))
-            if k == 'ohm:to_time':
-                conds.append(x['data']['tags']['ohm:from_time'] < args.get(k))
-            if k == 'ohm:topic':
-                conds.append(x['data']['tags']['ohm:topic'] == args.get(k))
+            if k == 'ohm:from_time' and 'ohm:to_time' in x['data']['tags']:
+                conds.append(x['data']['tags'].get('ohm:to_time') > float(args.get(k)))
+            if k == 'ohm:to_time' and 'ohm:from_time' in x['data']['tags']:
+                conds.append(x['data']['tags'].get('ohm:from_time') < float(args.get(k)))
+            if k == 'ohm:topic'  and 'ohm:topic' in x['data']['tags']:
+                conds.append(x['data']['tags'].get('ohm:topic') == args.get(k))
         return all(conds)
     return func
 
