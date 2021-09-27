@@ -121,7 +121,7 @@ def pull_items():
     areash = []
     for a in areas:
         try:
-            jj = requests.get('http://api.geonames.org/hierarchyJSON?formatted=true&geonameId={}&username={}&style=full'.format(a, 'openhistorymap'))
+            jj = requests.get('http://api.geonames.org/hierarchyJSON?formatted=true&geonameId={}&username={}'.format(a, 'openhistorymap'))
             jj = jj.json()
             areash.append(jj.get('geonames'))
         except Exception as ex:
