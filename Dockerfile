@@ -1,9 +1,12 @@
+FROM python:3.9
 
-FROM tiangolo/meinheld-gunicorn-flask:python3.7
+WORKDIR /srv
 
-RUN pip install meinheld gunicorn
+COPY requirements.txt /srv
+RUN pip install -r /srv/requirements.txt
 
-COPY requirements.txt /app
-RUN pip install -r /app/requirements.txt
-
-COPY ./app /app
+COPY ./app /srv/app
+COPY *.json /srv/
+COPY run.sh /srv
+RUN chmod 755 /srv/run.sh
+cmd "/srv/run.sh"

@@ -1,15 +1,23 @@
-from flask import Flask, request
 from pyzotero import zotero
 import json
-import pandas as pd
 import copy
-from flask_cors import CORS
 import requests
 import itertools
 import os
 
+from .db import * 
+
+from fastapi import Depends, FastAPI, HTTPException, Query
+from sqlmodel import Field, Session, SQLModel, create_engine, select  
+
+from pydantic import BaseModel
+from typing import Optional, Any, Union,List
+
 ZOT_API = os.environ.get('ZOTERO_KEY')
 OHM_LIB = "3757017"
+
+sqlite_file_name = "database.db"  
+sqlite_url = f"sqlite:///{sqlite_file_name}"  
 
 topics = json.load(open('topics.json'))
 
@@ -27,156 +35,50 @@ years = list(
 
 zot = zotero.Zotero(OHM_LIB, 'group', ZOT_API)
 
-#emplate = zot.item_template('book')
-#emplate['creators'][0]['firstName'] = 'Monty'
-#emplate['creators'][0]['lastName'] = 'Cantsin'
-#emplate['title'] = 'Maris Kundzins: A Life'
-#esp = zot.create_items([template])
-#
-#
-#tems = zot.everything(zot.top())
-# we've retrieved the latest five top-level items in our library
-# we can print each item's item type and ID
-#or item in items:
-#   print(item)
-#   zot.add_tags(item, *['ohm:period:roman', "ohm:from_time:-100", "ohm:to_time:300", "ohm:geo:europe"])
-#
+def get_session():
+    engine = create_engine(sqlite_url, connect_args={"check_same_thread": False})
+    with Session(engine) as session:
+        yield session
 
+app = FastAPI()
 
-app = Flask(__name__)
+@app.get('/')
+async def index():
+    return ""
 
-@app.route('/types')
-def get_types():
-    return json.dumps(zot.item_types())
+class ZoteroItemType(BaseModel):
+    itemType:str
+    localized:str
+
+@app.get('/types', response_model=List[ZoteroItemType])
+async def get_types():
+    return zot.item_types()
     
-@app.route('/tags')
-def get_tags():
-    return json.dumps(zot.tags())
+@app.get('/tags', response_model=List[str])
+async def get_tags():
+    return zot.tags()
 
-@app.route('/template/<typ>')
-def get_template(typ):
-    return json.dumps(zot.item_template(typ))
+@app.get('/template/{typ}', response_model=Any)
+async def get_template(typ:str):
+    return zot.item_template(typ)  
 
-@app.route('/push', methods=["POST"])
-def push():
-    print(request.body)
-    return "ok"
-    
-
-def traverse(root, branch):
-    if not branch:
-        return
-    if branch[0] not in root:
-        root[branch[0]] = {}
-    print(root, branch)
-    traverse(root[branch[0]], branch[1:])
-
-
-# Or rather, uglify
-def prettify(root):
-    res = []
-    for k, v in root.iteritems():
-        d = {}
-        d['name'] = k
-        d['children'] = prettify(v)
-        res.append(d)
-    return res
-
-
-
-@app.route('/pull')
-def pull_items():
-    itms = zot.everything(zot.items())
-    kitms = copy.deepcopy(itms)
-    json.dump(itms, open('dump.json', 'w'))
-    litms = [ ]
-
-    pitms = {}
-    ppitms = {}
-
-    ditms = {}
-    dditms = {}
-
-    areas = []
-
-    for x in itms:
-        if 'parentItem' in x['data']:
-            ditms[x['key']] = copy.deepcopy(x)
-            dditms[x['key']] = copy.deepcopy(x)
-
-    for x in itms:
-        tt = {}
-        for t in x['data']['tags']:
-            ts = t['tag'].split('=')
-            tt[ts[0]] = ts[1]
-        x['data']['tags'] = tt
-        if 'parentItem' not in x['data']:
-            pitms[x['key']] = copy.deepcopy(x)
-            ppitms[x['key']] = copy.deepcopy(x)
-        for t in tt.keys():
-            if t == 'ohm:area':
-                areas.append(tt[t].split(':')[1])
-
-    areas = list(set(areas))
-    areash = []
-    for a in areas:
-        try:
-            jj = requests.get('http://api.geonames.org/hierarchyJSON?formatted=true&geonameId={}&username={}'.format(a, 'openhistorymap'))
-            jj = jj.json()
-            areash.append(jj.get('geonames'))
-        except Exception as ex:
-            print(ex)
-    json.dump(areash, open('geonames.json', 'w+'))
-    areainfo = {}
-    areatree = {}
-    branches = []
-    for h in areash:
-        chain = []
-        for s in h:
-            areainfo[s['geonameId']] = s
-            chain.append(str(s['geonameId']))
-        branches.append(chain)
-
-    json.dump(areainfo, open('geonames.labels', 'w+'))
-    json.dump(branches, open('geonames.branches', 'w+'))
-    
-    for b in branches:
-        traverse(areatree, b)
-    json.dump(areatree, open('geonames.tree', 'w+'))
-
-    for d in dditms.keys():
-        ditms[d]['data']['parentItem'] = copy.deepcopy(ppitms[dditms[d]['data']['parentItem']])
-    for p in ppitms.keys():
-        pitms[p]['datasets'] = 0
-        for d in dditms.keys():
-            if dditms[d]['data']['parentItem'] == pitms[p]['key']:
-                pitms[p]['datasets'] = pitms[p]['datasets'] + 1
-    for x in kitms:
-        if 'parentItem' not in x['data']:
-            nitm = {"id":x['key']}
-            for t in x['data']['tags']:
-                if "=" in t['tag']:
-                    (tk, tv) = t['tag'].split('=')
-                else: 
-                    tk = t['tag']
-                    tv = 1
-                nitm[tk] = tv
-            #nitm['datasets'] = x['datasets']
-            litms.append(nitm)
-    json.dump(pitms, open('pitms.json', 'w'), indent=2)
-    json.dump(ditms, open('ditms.json', 'w'), indent=2)
-    dd = pd.DataFrame(litms).fillna(0)
-    dd['ohm:from_time'] = pd.to_numeric(dd["ohm:from_time"], downcast="float")
-    dd['ohm:to_time'] = pd.to_numeric(dd["ohm:to_time"], downcast="float")
-    dd['ohm:source_quality'] = pd.to_numeric(dd["ohm:source_quality"], downcast="float")
-    dd['ohm:source_reliability'] = pd.to_numeric(dd["ohm:source_reliability"], downcast="float")
-    dd.to_pickle('tags.feather')
+@app.get('/pull', response_model=str)
+async def pull_items():
+    from app.db import prepare
+    prepare()
     return 'ok'
 
-@app.route('/index')
-def coverage():
+class Index(BaseModel):
+    interval: str
+    available: str
+    topic: str
+    subs: str
+
+@app.get('/index', response_model=List[Index])
+async def coverage(ohm_area__in:str, tags:str, session: Session = Depends(get_session)):
+    engine = create_engine(sqlite_url, echo=True)  
+    area = ohm_area__in.split(',')
     top_s = list(topics.keys())
-    area = request.args.get('ohm:area__in', '').split(",")
     area_filter = None
     if len(area) == 1 and len(area[0]) == 0:
         area_filter = None
@@ -184,9 +86,8 @@ def coverage():
         area_filter = []
         for gid in area:
             area_filter.append('geonames:{}'.format(gid))
-
+    tags = tags.split('|')
     combos = itertools.product(years, top_s)
-    tags = request.args.get('tags', '').split('|')
     dd = pd.read_pickle('tags.feather')
     ret = []
     for g in combos:
@@ -205,12 +106,17 @@ def coverage():
             "available": len(tdd.index),
             "subs": list(set(tdd['ohm:topic:topic'].to_list()))
         })
-    return json.dumps(ret)
+    return ret
 
+class Indicators(BaseModel):
+    years: Any
+    topics: Any
+    areas: Any
+    trees: Any
 
-@app.route('/indices')
-def indicators():
-    areas = json.load(open('geonames.labels'))
+@app.get('/indices', response_model=Indicators)
+async def indicators(session: Session = Depends(get_session)):
+    areas = session.exec(select(GeoLabel)).all()
     trees = json.load(open('geonames.tree'))
     l = copy.deepcopy(years)
     l.reverse()
@@ -222,69 +128,38 @@ def indicators():
     }
 
     
-def flt_sources(args):
-    def func(x):
-        conds = []
-        for k in args.keys():
-            if k == 'ohm:from_time' and 'ohm:to_time' in x['data']['tags']:
-                conds.append(x['data']['tags'].get('ohm:to_time') > args.get(k))
-            if k == 'ohm:to_time' and 'ohm:from_time' in x['data']['tags']:
-                conds.append(x['data']['tags'].get('ohm:from_time') < args.get(k))
-            if k == 'ohm:topic' and 'ohm:topic' in x['data']['tags']:
-                conds.append(x['data']['tags'].get('ohm:topic') == args.get(k))
-        return all(conds)
-    return func
-
-@app.route('/sources')
-def references():
-    tags = request.args
-    itms = list(json.load(open('pitms.json')).values())
-    fitms = list(filter(flt_sources(tags), itms))
-    return json.dumps(fitms)
-    #dd = pd.read_feather('tags.feather')
-    #return dd.to_json(orient="records")
-
+@app.get('/sources', response_model=List[ResearchReadWithTags])
+async def references(from_time: Optional[float]= None, to_time: Optional[float]= None, topic: Optional[str]= None, session: Session = Depends(get_session)):
+    expr = select(Research).join(Tag)
+    if from_time:
+        expr = expr.where(Tag.name == 'ohm:to_time', Tag.num_value > from_time)
+    if to_time:
+        expr = expr.where(Tag.name == 'ohm:from_time', Tag.num_value < to_time)
+    if topic and len(topic) > 2:
+        expr = expr.where(Tag.name == 'ohm:topic', Tag.str_value == topic)
+    print(expr)
+    itms = session.exec(expr).all()
+    return itms
     
-@app.route('/sources/<id>')
-def reference(id):
-    itm = json.load(open('pitms.json')).get(id)
-    return json.dumps(itm)
-    #dd = pd.read_feather('tags.feather')
-    #return dd.to_json(orient="records")
-
+@app.get('/sources/{id}', response_model=ResearchReadWithTags)
+async def reference(id: str, session: Session = Depends(get_session)):
+    itm = session.exec(select(Research).where(Research.id==id)).one()
+    return itm
    
-def flt_ds(args):
-    def func(x):
-        conds = []
-        for k in args.keys():
-            if k == 'for':
-                conds.append(x['data']['parentItem']['key'] == args.get(k))
-            if k == 'ohm:from_time' and 'ohm:to_time' in x['data']['tags']:
-                conds.append(x['data']['tags'].get('ohm:to_time') > float(args.get(k)))
-            if k == 'ohm:to_time' and 'ohm:from_time' in x['data']['tags']:
-                conds.append(x['data']['tags'].get('ohm:from_time') < float(args.get(k)))
-            if k == 'ohm:topic'  and 'ohm:topic' in x['data']['tags']:
-                conds.append(x['data']['tags'].get('ohm:topic') == args.get(k))
-        return all(conds)
-    return func
 
+@app.get('/datasets', response_model=List[Dataset])
+async def datasets(for_research: Optional[str], session: Session = Depends(get_session)):
+    expr = select(Dataset)
+    if for_research:
+        expr = expr.where(Dataset.parent_research == for_research)
+    fitms = session.exec(expr).all()
+    return fitms
 
-@app.route('/datasets')
-def datasets():
-    tags = request.args
+@app.get('/datasets/{id}', response_model=Dataset)
+async def dataset(id:str, session: Session = Depends(get_session)):
+    itm = session.exec(select(Dataset).where(Dataset.id==id)).one()
+    return itm
 
-    itms = list(json.load(open('ditms.json')).values())
-    fitms = list(filter(flt_ds(tags), itms))
-    return json.dumps(fitms)
-    #dd = pd.read_feather('tags.feather')
-    #return dd.to_json(orient="records")
-
-@app.route('/datasets/<id>')
-def dataset(id):
-    itm = json.load(open('ditms.json')).get(id)
-    return json.dumps(itm)
-
-CORS(app)
 
 if __name__ == '__main__':
     a = app.run(port=9038, host="0.0.0.0", debug=True)
