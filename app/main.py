@@ -40,7 +40,11 @@ def get_session():
     with Session(engine) as session:
         yield session
 
-app = FastAPI()
+app = FastAPI(
+    title="Open History Map Data Index API",
+    description="",
+    version="2.0"
+)
 
 @app.get('/')
 async def index():
@@ -64,8 +68,9 @@ async def get_template(typ:str):
 
 @app.get('/pull', response_model=str)
 async def pull_items():
-    from app.db import prepare
-    prepare()
+    """Update the database"""
+    from app.db import refresh_db
+    refresh_db()
     return 'ok'
 
 class Index(BaseModel):
