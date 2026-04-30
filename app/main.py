@@ -28,7 +28,9 @@ years = list(
     ) + [[-3000, -2000]] + list(
         zip(list(range(-2000,0,500)), list(range(-1500,500,500)))
     ) + [[0, 500]] + list(
-        zip(list(range(500,2000,250)), list(range(750,2250,250)))
+        zip(list(range(500,1700,200)), list(range(700,1900,200)))
+    ) + [[1700, 1900]]+ list(
+        zip(list(range(500,1700,200)), list(range(700,1900,200)))
     )
 
 
@@ -41,7 +43,7 @@ def get_session():
         yield session
 
 app = FastAPI(
-    title="Open History Map Data Index API",
+    title=os.environ.get('INDEX_TITLE', "Open History Map") + " Data Index API",
     description="",
     version="2.0"
 )
@@ -74,77 +76,114 @@ async def pull_items():
     return 'ok'
 
 class Index(BaseModel):
-    interval: str
-    available: str
+    interval: List[float]
+    available: int
     topic: str
-    subs: str
+    subs: List[str]
 
 @app.get('/index', response_model=List[Index])
-async def coverage(ohm_area__in:str, tags:str, session: Session = Depends(get_session)):
-    engine = create_engine(sqlite_url, echo=True)  
+async def coverage(ohm_area__in: str, tags: str, session: Session = Depends(get_session)):
     area = ohm_area__in.split(',')
-    top_s = list(topics.keys())
-    area_filter = None
     if len(area) == 1 and len(area[0]) == 0:
         area_filter = None
     else:
-        area_filter = []
-        for gid in area:
-            area_filter.append('geonames:{}'.format(gid))
-    tags = tags.split('|')
-    combos = itertools.product(years, top_s)
-    dd = pd.read_pickle('tags.feather')
+        area_filter = ['geonames:{}'.format(gid) for gid in area]
+
+    by_subject: dict = {}
+    for t in session.exec(select(Tag)).all():
+        by_subject.setdefault(t.subject_id, []).append(t)
+
     ret = []
-    for g in combos:
-        ndd = dd[(
-                (dd['ohm:from_time']<=g[0][1])
-                &
-                (dd['ohm:to_time']>=g[0][0])
-            )]
-        tdd = ndd[ndd['ohm:topic'] == g[1]]
-        if area_filter:
-            atdd = tdd[tdd['ohm:area'].isin(area_filter)]
-            tdd = atdd
+    for (yr_from, yr_to), topic in itertools.product(years, list(topics.keys())):
+        matching = []
+        for taglist in by_subject.values():
+            from_time = next((t.num_value for t in taglist if t.name == 'ohm:from_time'), None)
+            to_time = next((t.num_value for t in taglist if t.name == 'ohm:to_time'), None)
+            r_topic = next((t.str_value for t in taglist if t.name == 'ohm:topic'), None)
+            if from_time is None or to_time is None or r_topic != topic:
+                continue
+            if from_time > yr_to or to_time < yr_from:
+                continue
+            if area_filter is not None:
+                r_areas = [t.str_value for t in taglist if t.name == 'ohm:area']
+                if not any(a in area_filter for a in r_areas):
+                    continue
+            matching.append(taglist)
+
+        subs = sorted({t.str_value for tl in matching for t in tl if t.name == 'ohm:topic:topic'})
         ret.append({
-            'interval': [g[0][0], g[0][1]], 
-            "topic":  g[1], 
-            "available": len(tdd.index),
-            "subs": list(set(tdd['ohm:topic:topic'].to_list()))
+            'interval': [yr_from, yr_to],
+            'topic': topic,
+            'available': len(matching),
+            'subs': subs,
         })
     return ret
 
+class Indicator(BaseModel):
+    name: str
+    values: Any
+    primary: bool
+
 class Indicators(BaseModel):
+    
     years: Any
     topics: Any
     areas: Any
     trees: Any
 
-@app.get('/indices', response_model=Indicators)
+@app.get('/indices', response_model=List[Indicator])
 async def indicators(session: Session = Depends(get_session)):
     areas = session.exec(select(GeoLabel)).all()
     trees = json.load(open('geonames.tree'))
     l = copy.deepcopy(years)
     l.reverse()
-    return {
-        "years": l,
-        "topics": topics,
-        "areas": areas,
-        "trees": trees,
-    }
+    return [{
+        "name": "years",
+        "values": l,
+        "primary": True
+    }, {
+        "name": "topics",
+        "values": topics,
+        "primary": True
+    }, {
+        "name": "areas",
+        "values": areas,
+        "primary": True
+    }, {
+        "name": "trees",
+        "values": trees,
+        "primary": False
+    }]
 
     
 @app.get('/sources', response_model=List[ResearchReadWithTags])
-async def references(from_time: Optional[float]= None, to_time: Optional[float]= None, topic: Optional[str]= None, session: Session = Depends(get_session)):
-    expr = select(Research).join(Tag)
-    if from_time:
-        expr = expr.where(Tag.name == 'ohm:to_time', Tag.num_value > from_time)
-    if to_time:
-        expr = expr.where(Tag.name == 'ohm:from_time', Tag.num_value < to_time)
+async def references(from_time: Optional[float] = None, to_time: Optional[float] = None, topic: Optional[str] = None, session: Session = Depends(get_session)):
+    expr = select(Research)
+    if from_time is not None:
+        expr = expr.where(
+            select(Tag).where(
+                Tag.subject_id == Research.id,
+                Tag.name == 'ohm:to_time',
+                Tag.num_value > from_time,
+            ).exists()
+        )
+    if to_time is not None:
+        expr = expr.where(
+            select(Tag).where(
+                Tag.subject_id == Research.id,
+                Tag.name == 'ohm:from_time',
+                Tag.num_value < to_time,
+            ).exists()
+        )
     if topic and len(topic) > 2:
-        expr = expr.where(Tag.name == 'ohm:topic', Tag.str_value == topic)
-    print(expr)
-    itms = session.exec(expr).all()
-    return itms
+        expr = expr.where(
+            select(Tag).where(
+                Tag.subject_id == Research.id,
+                Tag.name == 'ohm:topic',
+                Tag.str_value == topic,
+            ).exists()
+        )
+    return session.exec(expr).all()
     
 @app.get('/sources/{id}', response_model=ResearchReadWithTags)
 async def reference(id: str, session: Session = Depends(get_session)):
@@ -153,7 +192,7 @@ async def reference(id: str, session: Session = Depends(get_session)):
    
 
 @app.get('/datasets', response_model=List[Dataset])
-async def datasets(for_research: Optional[str], session: Session = Depends(get_session)):
+async def datasets(for_research: Optional[str] = None, session: Session = Depends(get_session)):
     expr = select(Dataset)
     if for_research:
         expr = expr.where(Dataset.parent_research == for_research)
@@ -167,4 +206,5 @@ async def dataset(id:str, session: Session = Depends(get_session)):
 
 
 if __name__ == '__main__':
-    a = app.run(port=9038, host="0.0.0.0", debug=True)
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=9038)

@@ -20,7 +20,7 @@ class GeoLabel(SQLModel, table=True):
     fcl:str
     fcode:str
     population:int
-    parent: Optional[str]
+    parent: Optional[str] = None
 
 class GeoTree(SQLModel, table=True):
     id: Optional[str] = Field(default=None, primary_key=True)
@@ -84,7 +84,7 @@ class ResearchRead(ResearchBase):
 class TagBase(SQLModel):
     name: str = Field(index=True)
     str_value: str = Field(index=True)
-    num_value: Optional[float] = Field(index=True)
+    num_value: Optional[float] = Field(default=None, index=True)
 
 class Tag(TagBase, table=True):
     id: Optional[str] = Field(default=None, primary_key=True)
@@ -223,13 +223,13 @@ def prepare():
             store_branch(ses, kk, v[kk])
 
 
-    def store_parent(ses, k, v): 
+    def store_parent(ses, k, v):
         for kk in v.keys():
-            statement = select(GeoLabel).where(GeoLabel.id == str(kk))  
-            results = session.exec(statement)  
-            labl = results.one()  
-            labl.parent = kk
-            ses.add(labl) 
+            statement = select(GeoLabel).where(GeoLabel.id == str(kk))
+            results = ses.exec(statement)
+            labl = results.one()
+            labl.parent = str(k)
+            ses.add(labl)
             store_parent(ses, kk, v[kk])
 
     with Session(engine) as session:

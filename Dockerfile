@@ -9,4 +9,4 @@ COPY ./app /srv/app
 COPY *.json /srv/
 COPY run.sh /srv
 RUN chmod 755 /srv/run.sh
-cmd "/srv/run.sh"
+CMD ["/srv/run.sh"]
