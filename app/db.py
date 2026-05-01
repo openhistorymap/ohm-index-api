@@ -43,36 +43,47 @@ class Research(ResearchBase, table=True):
 
     @staticmethod
     def create(session, data) -> 'Research':
-        print(data)
         r = Research(
             id=data['key'],
             raw=json.dumps(data),
-            zotero = data['links']['alternate']['href'],
-            zotero_api = data['links']['self']['href'],
+            zotero=data['links']['alternate']['href'],
+            zotero_api=data['links']['self']['href'],
             type=data['data']['itemType'],
             creator_summary=data['meta'].get('creatorSummary', ''),
             title=data['data'].get('title', ''),
             url=data['data'].get('url', ''),
             date=data['data'].get('accessDate', ''),
         )
-        
+
         session.add(r)
         session.commit()
 
-        for t in data['data']['tags']:
-            kv = t['tag']
-            k,v = kv.split('=')
-            params = {}
-            params['id'] = str(uuid.uuid4())
-            params['subject_id']=r.id
-            params['name'] = k
-            params['str_value'] = v
+        for t in data['data'].get('tags', []):
+            kv = t.get('tag', '')
+            if not kv:
+                continue
+            # Tags follow OHM's "key=value" convention; preserve "=" inside the value
+            # and accept plain Zotero tags (no "=") rather than crashing the whole import.
+            if '=' in kv:
+                name, value = kv.split('=', 1)
+            else:
+                name, value = kv, ''
+            if not name:
+                continue
+            params = {
+                'id': str(uuid.uuid4()),
+                'subject_id': r.id,
+                'name': name,
+                'str_value': value,
+            }
             try:
-                params['num_value']=float(v)
-            except:
+                params['num_value'] = float(value)
+            except (TypeError, ValueError):
                 pass
-            tt = Tag(**params)
-            session.add(tt)
+            try:
+                session.add(Tag(**params))
+            except Exception as ex:
+                print('failed to add tag {!r} for {}: {}'.format(kv, r.id, ex))
 
         session.commit()
         return r
@@ -177,17 +188,16 @@ def prepare():
         session.commit()
         
         for x in itms:
-            tt = {}
-            for t in x['data']['tags']:
-                ts = t['tag'].split('=')
-                tt[ts[0]] = ts[1]
             if 'parentItem' not in x['data']:
                 Research.create(session, x)
-
                 ppitms[x['key']] = copy.deepcopy(x)
-            for t in tt.keys():
-                if t == 'ohm:area':
-                    areas.append(tt[t].split(':')[1])
+            for t in x['data'].get('tags', []):
+                s = t.get('tag', '')
+                if '=' not in s:
+                    continue
+                name, value = s.split('=', 1)
+                if name == 'ohm:area' and ':' in value:
+                    areas.append(value.split(':', 1)[1])
         session.commit()
     areas = list(set(areas))
     areash = []
