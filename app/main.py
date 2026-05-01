@@ -8,7 +8,8 @@ import os
 from .db import * 
 
 from fastapi import Depends, FastAPI, HTTPException, Query
-from sqlmodel import Field, Session, SQLModel, create_engine, select  
+from fastapi.middleware.cors import CORSMiddleware
+from sqlmodel import Field, Session, SQLModel, create_engine, select
 
 from pydantic import BaseModel
 from typing import Optional, Any, Union,List
@@ -46,6 +47,14 @@ app = FastAPI(
     title=os.environ.get('INDEX_TITLE', "Open History Map") + " Data Index API",
     description="",
     version="2.0"
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 @app.get('/')
